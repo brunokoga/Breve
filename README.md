@@ -1,4 +1,4 @@
 Bubs
 ====
 
-Bubs for iOS
+iBubs: Bubs for iOS
