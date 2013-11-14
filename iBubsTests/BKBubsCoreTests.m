@@ -29,11 +29,29 @@
 
 - (void)testNormalToBubs
 {
+    NSString *original;
+    NSString *expected;
+    NSString *bubs;
     
+    original = @"Klebao Vida Loka";
+    bubs = [[BKBubsCore sharedInstance] convertFromNormalToBubs:original];
+    expected = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
+    
+    XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");
+
 }
 
 - (void)testBubsToNormal
 {
+    NSString *original;
+    NSString *expected;
+    NSString *bubs;
+    
+    original = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
+    bubs = [[BKBubsCore sharedInstance] convertFromBubsToNormal:original];
+    expected = @"Klebao Vida Loka";
+    
+    XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");
     
 }
 @end

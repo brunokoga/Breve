@@ -29,10 +29,10 @@
     if (!_normalLetters) {
         NSString *normalLettersString = @"a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9";
         NSArray *normalLetters = [normalLettersString componentsSeparatedByString:@" "];
-        self.normalLetters = normalLetters;
+        _normalLetters = normalLetters;
     }
     
-    return self.normalLetters;
+    return _normalLetters;
 }
 
 - (NSArray *)bubsLetters
@@ -40,9 +40,9 @@
     if (!_bubsLetters) {
         NSString *bubbleLettersString = @"ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨";
         NSArray *bubsLetters = [bubbleLettersString componentsSeparatedByString:@" "];
-        self.bubsLetters = bubsLetters;
+        _bubsLetters = bubsLetters;
     }
-    return self.bubsLetters;
+    return _bubsLetters;
 }
 
 - (NSString *)convertFromNormalToBubs:(NSString *)string

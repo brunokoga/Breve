@@ -13,6 +13,8 @@
 @property (strong, nonatomic, readonly) NSArray *normalLetters;
 @property (strong, nonatomic, readonly) NSArray *bubsLetters;
 
++ (id)sharedInstance;
+
 - (NSString *)convertFromNormalToBubs:(NSString *)string;
 - (NSString *)convertFromBubsToNormal:(NSString *)string;
 
