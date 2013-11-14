@@ -13,4 +13,7 @@
 @property (strong, nonatomic, readonly) NSArray *normalLetters;
 @property (strong, nonatomic, readonly) NSArray *bubbleLetters;
 
+- (NSString *)convertFromNormalToBubble:(NSString *)string;
+- (NSString *)convertFromBubbleToNormal:(NSString *)string;
+
 @end

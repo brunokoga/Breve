@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D366A5571835557600F7157E /* BKBubsCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5561835557600F7157E /* BKBubsCoreTests.m */; };
 		D3CF9B3A1834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B3C1834E33200C7C33F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */; };
 		D3CF9B3E1834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
@@ -18,7 +19,6 @@
 		D3CF9B541834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
 		D3CF9B5D1834E33200C7C33F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */; };
-		D3CF9B5F1834E33200C7C33F /* iBubsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B5E1834E33200C7C33F /* iBubsTests.m */; };
 		D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B691834E49300C7C33F /* BKBubsCore.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D366A5561835557600F7157E /* BKBubsCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsCoreTests.m; sourceTree = "<group>"; };
 		D3CF9B361834E33200C7C33F /* iBubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,7 +49,6 @@
 		D3CF9B521834E33200C7C33F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D3CF9B5A1834E33200C7C33F /* iBubsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBubsTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B5C1834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3CF9B5E1834E33200C7C33F /* iBubsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBubsTests.m; sourceTree = "<group>"; };
 		D3CF9B681834E49300C7C33F /* BKBubsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsCore.h; path = Classes/Core/BKBubsCore.h; sourceTree = "<group>"; };
 		D3CF9B691834E49300C7C33F /* BKBubsCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsCore.m; path = Classes/Core/BKBubsCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,7 @@
 		D3CF9B581834E33200C7C33F /* iBubsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B5E1834E33200C7C33F /* iBubsTests.m */,
+				D366A5561835557600F7157E /* BKBubsCoreTests.m */,
 				D3CF9B591834E33200C7C33F /* Supporting Files */,
 			);
 			path = iBubsTests;
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CF9B5F1834E33200C7C33F /* iBubsTests.m in Sources */,
+				D366A5571835557600F7157E /* BKBubsCoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

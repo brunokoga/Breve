@@ -45,4 +45,35 @@
     return self.bubbleLetters;
 }
 
+- (NSString *)convertFromNormalToBubble:(NSString *)string
+{
+    return [self convertString:string
+                   fromMapping:[self normalLetters]
+                     toMapping:[self bubbleLetters]];
+    
+}
+
+- (NSString *)convertFromBubbleToNormal:(NSString *)string
+{
+    return [self convertString:string
+                   fromMapping:[self bubbleLetters]
+                     toMapping:[self normalLetters]];
+}
+
+- (NSString *)convertString:(NSString *)string
+                fromMapping:(NSArray *)fromMapping
+                  toMapping:(NSArray *)toMapping
+{
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithString:string];
+    for (int i = 0; i < [fromMapping count]; i++)
+    {
+        [mutableString replaceOccurrencesOfString:fromMapping[i]
+                              withString:toMapping[i]
+                                 options:0
+                                   range:NSMakeRange(0, [mutableString length])];
+        
+    }
+    return [mutableString copy];
+}
+
 @end
