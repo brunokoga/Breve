@@ -9,7 +9,7 @@
 #import "BKBubsCore.h"
 @interface BKBubsCore ()
 @property (strong, nonatomic) NSArray *normalLetters;
-@property (strong, nonatomic) NSArray *bubbleLetters;
+@property (strong, nonatomic) NSArray *bubsLetters;
 @end
 
 @implementation BKBubsCore
@@ -35,28 +35,28 @@
     return self.normalLetters;
 }
 
-- (NSArray *)bubbleLetters
+- (NSArray *)bubsLetters
 {
-    if (!_bubbleLetters) {
+    if (!_bubsLetters) {
         NSString *bubbleLettersString = @"ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨";
-        NSArray *bubbleLetters = [bubbleLettersString componentsSeparatedByString:@" "];
-        self.bubbleLetters = bubbleLetters;
+        NSArray *bubsLetters = [bubbleLettersString componentsSeparatedByString:@" "];
+        self.bubsLetters = bubsLetters;
     }
-    return self.bubbleLetters;
+    return self.bubsLetters;
 }
 
-- (NSString *)convertFromNormalToBubble:(NSString *)string
+- (NSString *)convertFromNormalToBubs:(NSString *)string
 {
     return [self convertString:string
                    fromMapping:[self normalLetters]
-                     toMapping:[self bubbleLetters]];
+                     toMapping:[self bubsLetters]];
     
 }
 
-- (NSString *)convertFromBubbleToNormal:(NSString *)string
+- (NSString *)convertFromBubsToNormal:(NSString *)string
 {
     return [self convertString:string
-                   fromMapping:[self bubbleLetters]
+                   fromMapping:[self bubsLetters]
                      toMapping:[self normalLetters]];
 }
 

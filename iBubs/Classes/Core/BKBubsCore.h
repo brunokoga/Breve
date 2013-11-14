@@ -11,9 +11,9 @@
 @interface BKBubsCore : NSObject
 
 @property (strong, nonatomic, readonly) NSArray *normalLetters;
-@property (strong, nonatomic, readonly) NSArray *bubbleLetters;
+@property (strong, nonatomic, readonly) NSArray *bubsLetters;
 
-- (NSString *)convertFromNormalToBubble:(NSString *)string;
-- (NSString *)convertFromBubbleToNormal:(NSString *)string;
+- (NSString *)convertFromNormalToBubs:(NSString *)string;
+- (NSString *)convertFromBubsToNormal:(NSString *)string;
 
 @end
