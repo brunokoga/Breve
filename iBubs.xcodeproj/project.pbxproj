@@ -19,6 +19,7 @@
 		D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
 		D3CF9B5D1834E33200C7C33F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */; };
 		D3CF9B5F1834E33200C7C33F /* iBubsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B5E1834E33200C7C33F /* iBubsTests.m */; };
+		D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B691834E49300C7C33F /* BKBubsCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		D3CF9B5A1834E33200C7C33F /* iBubsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBubsTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B5C1834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3CF9B5E1834E33200C7C33F /* iBubsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBubsTests.m; sourceTree = "<group>"; };
+		D3CF9B681834E49300C7C33F /* BKBubsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsCore.h; path = Classes/Core/BKBubsCore.h; sourceTree = "<group>"; };
+		D3CF9B691834E49300C7C33F /* BKBubsCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsCore.m; path = Classes/Core/BKBubsCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				D3CF9B491834E33200C7C33F /* BKAppDelegate.m */,
 				D3CF9B4B1834E33200C7C33F /* Images.xcassets */,
 				D3CF9B401834E33200C7C33F /* Supporting Files */,
+				D3CF9B681834E49300C7C33F /* BKBubsCore.h */,
+				D3CF9B691834E49300C7C33F /* BKBubsCore.m */,
 			);
 			path = iBubs;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */,
 				D3CF9B461834E33200C7C33F /* main.m in Sources */,
 				D3CF9B4A1834E33200C7C33F /* BKAppDelegate.m in Sources */,
 			);
@@ -442,6 +448,7 @@
 				D3CF9B641834E33200C7C33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3CF9B651834E33200C7C33F /* Build configuration list for PBXNativeTarget "iBubsTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				D3CF9B671834E33200C7C33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
