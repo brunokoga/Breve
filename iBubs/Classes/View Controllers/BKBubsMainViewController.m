@@ -25,8 +25,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.textView.font = [UIFont systemFontOfSize:24.0];
+    self.textView.font = [UIFont systemFontOfSize:26.0];
+    [self setUpGestureRecognizers];
 }
+
+
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -49,6 +53,19 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+#pragma mark - Gesture Recognizers
+- (void)setUpGestureRecognizers
+{
+    UISwipeGestureRecognizer *swipeToClear = [UISwipeGestureRecognizer new];
+    [swipeToClear setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [swipeToClear addTarget:self action:@selector(swipeToClear:)];
+    [self.textView addGestureRecognizer:swipeToClear];
+}
+
+- (void)swipeToClear:(UISwipeGestureRecognizer *)gestureRecognizer
+{
+    self.textView.text = @"";
+}
 
 #pragma mark - Keyboard Notifications
 
@@ -71,7 +88,6 @@
     
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
     CGFloat height = isPortrait ? keyboardRect.size.height : keyboardRect.size.width;
-    NSLog(@"The keyboard height is: %f", height);
  
     [self keyboardWillAnimateWithDuration:animationDuration
                                  toHeight:height];
