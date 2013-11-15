@@ -13,6 +13,9 @@
 		D366A5631836634A00F7157E /* BKBubsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5621836634A00F7157E /* BKBubsBaseViewController.m */; };
 		D366A5661836635F00F7157E /* BKBubsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5651836635F00F7157E /* BKBubsMainViewController.m */; };
 		D366A5691836639F00F7157E /* BKBubsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5681836639F00F7157E /* BKBubsNavigationController.m */; };
+		D366A56F18366C2900F7157E /* BKBubsSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */; };
+		D366A5721836701E00F7157E /* BKBubsSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5711836701E00F7157E /* BKBubsSettings.m */; };
+		D366A5751836722600F7157E /* BKBubsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5741836722600F7157E /* BKBubsAboutViewController.m */; };
 		D3CF9B3A1834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B3C1834E33200C7C33F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */; };
 		D3CF9B3E1834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
@@ -48,6 +51,12 @@
 		D366A5651836635F00F7157E /* BKBubsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsMainViewController.m; path = "Classes/View Controllers/BKBubsMainViewController.m"; sourceTree = "<group>"; };
 		D366A5671836639F00F7157E /* BKBubsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsNavigationController.h; path = "Classes/View Controllers/BKBubsNavigationController.h"; sourceTree = "<group>"; };
 		D366A5681836639F00F7157E /* BKBubsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsNavigationController.m; path = "Classes/View Controllers/BKBubsNavigationController.m"; sourceTree = "<group>"; };
+		D366A56D18366C2900F7157E /* BKBubsSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsSettingsViewController.h; path = "Classes/View Controllers/BKBubsSettingsViewController.h"; sourceTree = "<group>"; };
+		D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsSettingsViewController.m; path = "Classes/View Controllers/BKBubsSettingsViewController.m"; sourceTree = "<group>"; };
+		D366A5701836701E00F7157E /* BKBubsSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsSettings.h; path = Classes/Core/BKBubsSettings.h; sourceTree = "<group>"; };
+		D366A5711836701E00F7157E /* BKBubsSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsSettings.m; path = Classes/Core/BKBubsSettings.m; sourceTree = "<group>"; };
+		D366A5731836722600F7157E /* BKBubsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsAboutViewController.h; path = "Classes/View Controllers/BKBubsAboutViewController.h"; sourceTree = "<group>"; };
+		D366A5741836722600F7157E /* BKBubsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsAboutViewController.m; path = "Classes/View Controllers/BKBubsAboutViewController.m"; sourceTree = "<group>"; };
 		D3CF9B361834E33200C7C33F /* iBubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +157,12 @@
 				D366A5651836635F00F7157E /* BKBubsMainViewController.m */,
 				D366A5671836639F00F7157E /* BKBubsNavigationController.h */,
 				D366A5681836639F00F7157E /* BKBubsNavigationController.m */,
+				D366A56D18366C2900F7157E /* BKBubsSettingsViewController.h */,
+				D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */,
+				D366A5731836722600F7157E /* BKBubsAboutViewController.h */,
+				D366A5741836722600F7157E /* BKBubsAboutViewController.m */,
+				D366A5701836701E00F7157E /* BKBubsSettings.h */,
+				D366A5711836701E00F7157E /* BKBubsSettings.m */,
 			);
 			path = iBubs;
 			sourceTree = "<group>";
@@ -279,7 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */,
+				D366A5751836722600F7157E /* BKBubsAboutViewController.m in Sources */,
 				D366A560183662E000F7157E /* BKBubsSegmentedControl.m in Sources */,
+				D366A56F18366C2900F7157E /* BKBubsSettingsViewController.m in Sources */,
+				D366A5721836701E00F7157E /* BKBubsSettings.m in Sources */,
 				D366A5661836635F00F7157E /* BKBubsMainViewController.m in Sources */,
 				D366A5691836639F00F7157E /* BKBubsNavigationController.m in Sources */,
 				D366A5631836634A00F7157E /* BKBubsBaseViewController.m in Sources */,
