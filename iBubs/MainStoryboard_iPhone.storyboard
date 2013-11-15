@@ -117,10 +117,23 @@
                     <view key="view" contentMode="scaleToFill" id="83P-Ud-waZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zw-EH-kpB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Special acknowledgements:
+
+- Zach Holman's bubs Project (https://github.com/holman/bubs)
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="Uz7-cu-6VC">
-                        <barButtonItem key="leftBarButtonItem" title="Ok" id="SVM-eW-xzw">
+                        <barButtonItem key="leftBarButtonItem" title="OK" id="SVM-eW-xzw">
                             <connections>
                                 <action selector="dismissButtonPressed:" destination="rMn-G8-XvG" id="MQA-4h-guT"/>
                             </connections>
