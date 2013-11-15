@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum NSInteger
+{
+    BKBubsSegmentedControlIndexNormal = 0,
+    BKBubsSegmentedControlIndexBubs = 1
+} BKBubsSegmentedControlIndex;
+
 @interface BKBubsSegmentedControl : UISegmentedControl
 
 @end
