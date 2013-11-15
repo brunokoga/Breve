@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
+@property (nonatomic) NSRange cursorRange;
 
 @end
 
@@ -21,6 +22,11 @@
 
 #pragma mark - View Lifecycle
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.textView.font = [UIFont systemFontOfSize:24.0];
+}
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -49,20 +55,26 @@
 - (void)keyboardWillAnimateWithDuration:(NSTimeInterval)animationDuration
           toHeight:(CGFloat)height
 {
+    
     [UIView animateWithDuration:animationDuration
                      animations:^{
                          self.textViewVerticalBottomSpaceConstraint.constant = height;
                          [self.view layoutIfNeeded];
                      }];
+     
 }
 
 - (void)keyboardWillAppear:(NSNotification*)notification
 {
     NSTimeInterval animationDuration = [(NSNumber*)[notification userInfo][UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     CGRect keyboardRect = [[notification userInfo][UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    BOOL isPortrait = UIDeviceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
+    CGFloat height = isPortrait ? keyboardRect.size.height : keyboardRect.size.width;
+    NSLog(@"The keyboard height is: %f", height);
  
     [self keyboardWillAnimateWithDuration:animationDuration
-                                 toHeight:keyboardRect.size.height];
+                                 toHeight:height];
 }
 
 - (void)keyboardWillDisappear:(NSNotification*)notification
@@ -101,7 +113,6 @@
 {
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.textView.text]
                                                                                          applicationActivities:nil];
-//    activityVC.excludedActivityTypes = @[ UIActivityTypeMessage ,UIActivityTypeAssignToContact,UIActivityTypeSaveToCameraRoll];
     [self presentViewController:activityViewController
                        animated:YES
                      completion:^{
@@ -115,7 +126,18 @@
     if (self.segmentedControl.selectedSegmentIndex == BKBubsSegmentedControlIndexBubs)
     {
         textView.text = [[BKBubsCore sharedInstance] convertFromNormalToBubs:textView.text];
+        [textView setSelectedRange:self.cursorRange];
     }
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    [textView scrollRangeToVisible:range];
+    NSUInteger location = range.location + [text length];
+    NSUInteger length = 0;
+    self.cursorRange = NSMakeRange(location, length);
+    return YES;
+    
 }
 
 @end
