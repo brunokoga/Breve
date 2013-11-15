@@ -78,7 +78,7 @@
 }
 
 - (IBAction)copyButtonPressed:(id)sender {
-    [self copyTextViewTextToPasteboard];
+    [self shareAction];
 }
 
 - (IBAction)segmentedControlValueChanged:(id)sender {
@@ -97,10 +97,16 @@
 
 #pragma mark - Real Actions
 
-- (void)copyTextViewTextToPasteboard
+- (void)shareAction
 {
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setString:self.textView.text];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.textView.text]
+                                                                                         applicationActivities:nil];
+//    activityVC.excludedActivityTypes = @[ UIActivityTypeMessage ,UIActivityTypeAssignToContact,UIActivityTypeSaveToCameraRoll];
+    [self presentViewController:activityViewController
+                       animated:YES
+                     completion:^{
+                         
+                     }];
 }
 
 #pragma mark - UITextFieldDelegate

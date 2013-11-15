@@ -54,7 +54,7 @@
                                 <action selector="segmentedControlValueChanged:" destination="vMU-IH-vsx" eventType="valueChanged" id="29E-5o-taU"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" title="Copy" id="VnJ-8V-fnW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VnJ-8V-fnW">
                             <connections>
                                 <action selector="copyButtonPressed:" destination="vMU-IH-vsx" id="nCL-Qs-DfJ"/>
                             </connections>
