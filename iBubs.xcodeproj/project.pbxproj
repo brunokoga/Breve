@@ -57,7 +57,7 @@
 		D366A5711836701E00F7157E /* BKBubsSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsSettings.m; path = Classes/Core/BKBubsSettings.m; sourceTree = "<group>"; };
 		D366A5731836722600F7157E /* BKBubsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsAboutViewController.h; path = "Classes/View Controllers/BKBubsAboutViewController.h"; sourceTree = "<group>"; };
 		D366A5741836722600F7157E /* BKBubsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsAboutViewController.m; path = "Classes/View Controllers/BKBubsAboutViewController.m"; sourceTree = "<group>"; };
-		D3CF9B361834E33200C7C33F /* iBubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CF9B361834E33200C7C33F /* Bubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D3CF9B3D1834E33200C7C33F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -123,7 +123,7 @@
 		D3CF9B371834E33200C7C33F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B361834E33200C7C33F /* iBubs.app */,
+				D3CF9B361834E33200C7C33F /* Bubs.app */,
 				D3CF9B511834E33200C7C33F /* iBubsTests.xctest */,
 			);
 			name = Products;
@@ -213,7 +213,7 @@
 			);
 			name = iBubs;
 			productName = iBubs;
-			productReference = D3CF9B361834E33200C7C33F /* iBubs.app */;
+			productReference = D3CF9B361834E33200C7C33F /* Bubs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D3CF9B501834E33200C7C33F /* iBubsTests */ = {
@@ -424,7 +424,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
 				INFOPLIST_FILE = "iBubs/iBubs-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Bubs;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,7 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
 				INFOPLIST_FILE = "iBubs/iBubs-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Bubs;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
