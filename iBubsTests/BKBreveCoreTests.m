@@ -7,13 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "BKBubsCore.h"
+#import "BKBreveCore.h"
 
-@interface BKBubsCoreTests : XCTestCase
+@interface BKBreveCoreTests : XCTestCase
 
 @end
 
-@implementation BKBubsCoreTests
+@implementation BKBreveCoreTests
 
 - (void)setUp
 {
@@ -34,7 +34,7 @@
     NSString *bubs;
     
     original = @"Klebao Vida Loka";
-    bubs = [[BKBubsCore sharedInstance] convertFromNormalToBubs:original];
+    bubs = [[BKBreveCore sharedInstance] convertFromNormalToBubs:original];
     expected = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
     
     XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");
@@ -48,7 +48,7 @@
     NSString *bubs;
     
     original = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
-    bubs = [[BKBubsCore sharedInstance] convertFromBubsToNormal:original];
+    bubs = [[BKBreveCore sharedInstance] convertFromBubsToNormal:original];
     expected = @"Klebao Vida Loka";
     
     XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");

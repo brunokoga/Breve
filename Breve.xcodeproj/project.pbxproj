@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D366A5571835557600F7157E /* BKBubsCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5561835557600F7157E /* BKBubsCoreTests.m */; };
+		D366A5571835557600F7157E /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5561835557600F7157E /* BKBreveCoreTests.m */; };
 		D366A5591836613D00F7157E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */; };
 		D366A560183662E000F7157E /* BKBubsSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A55F183662E000F7157E /* BKBubsSegmentedControl.m */; };
-		D366A5631836634A00F7157E /* BKBubsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5621836634A00F7157E /* BKBubsBaseViewController.m */; };
-		D366A5661836635F00F7157E /* BKBubsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5651836635F00F7157E /* BKBubsMainViewController.m */; };
-		D366A5691836639F00F7157E /* BKBubsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5681836639F00F7157E /* BKBubsNavigationController.m */; };
-		D366A56F18366C2900F7157E /* BKBubsSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */; };
-		D366A5721836701E00F7157E /* BKBubsSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5711836701E00F7157E /* BKBubsSettings.m */; };
-		D366A5751836722600F7157E /* BKBubsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5741836722600F7157E /* BKBubsAboutViewController.m */; };
+		D366A5631836634A00F7157E /* BKBreveBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5621836634A00F7157E /* BKBreveBaseViewController.m */; };
+		D366A5661836635F00F7157E /* BKBreveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5651836635F00F7157E /* BKBreveMainViewController.m */; };
+		D366A5691836639F00F7157E /* BKBreveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5681836639F00F7157E /* BKBreveNavigationController.m */; };
+		D366A56F18366C2900F7157E /* BKBreveSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */; };
+		D366A5721836701E00F7157E /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5711836701E00F7157E /* BKBreveSettings.m */; };
+		D366A5751836722600F7157E /* BKBreveAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5741836722600F7157E /* BKBreveAboutViewController.m */; };
 		D3CF9B3A1834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B3C1834E33200C7C33F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */; };
 		D3CF9B3E1834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
@@ -27,7 +27,7 @@
 		D3CF9B541834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
 		D3CF9B5D1834E33200C7C33F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */; };
-		D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B691834E49300C7C33F /* BKBubsCore.m */; };
+		D3CF9B6A1834E49300C7C33F /* BKBreveCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B691834E49300C7C33F /* BKBreveCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,39 +41,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D366A5561835557600F7157E /* BKBubsCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsCoreTests.m; sourceTree = "<group>"; };
+		D366A5561835557600F7157E /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
 		D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D366A55E183662E000F7157E /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
 		D366A55F183662E000F7157E /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
-		D366A5611836634A00F7157E /* BKBubsBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsBaseViewController.h; path = "Classes/View Controllers/BKBubsBaseViewController.h"; sourceTree = "<group>"; };
-		D366A5621836634A00F7157E /* BKBubsBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsBaseViewController.m; path = "Classes/View Controllers/BKBubsBaseViewController.m"; sourceTree = "<group>"; };
-		D366A5641836635F00F7157E /* BKBubsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsMainViewController.h; path = "Classes/View Controllers/BKBubsMainViewController.h"; sourceTree = "<group>"; };
-		D366A5651836635F00F7157E /* BKBubsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsMainViewController.m; path = "Classes/View Controllers/BKBubsMainViewController.m"; sourceTree = "<group>"; };
-		D366A5671836639F00F7157E /* BKBubsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsNavigationController.h; path = "Classes/View Controllers/BKBubsNavigationController.h"; sourceTree = "<group>"; };
-		D366A5681836639F00F7157E /* BKBubsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsNavigationController.m; path = "Classes/View Controllers/BKBubsNavigationController.m"; sourceTree = "<group>"; };
-		D366A56D18366C2900F7157E /* BKBubsSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsSettingsViewController.h; path = "Classes/View Controllers/BKBubsSettingsViewController.h"; sourceTree = "<group>"; };
-		D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsSettingsViewController.m; path = "Classes/View Controllers/BKBubsSettingsViewController.m"; sourceTree = "<group>"; };
-		D366A5701836701E00F7157E /* BKBubsSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsSettings.h; path = Classes/Core/BKBubsSettings.h; sourceTree = "<group>"; };
-		D366A5711836701E00F7157E /* BKBubsSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsSettings.m; path = Classes/Core/BKBubsSettings.m; sourceTree = "<group>"; };
-		D366A5731836722600F7157E /* BKBubsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsAboutViewController.h; path = "Classes/View Controllers/BKBubsAboutViewController.h"; sourceTree = "<group>"; };
-		D366A5741836722600F7157E /* BKBubsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsAboutViewController.m; path = "Classes/View Controllers/BKBubsAboutViewController.m"; sourceTree = "<group>"; };
-		D3CF9B361834E33200C7C33F /* Bubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D366A5611836634A00F7157E /* BKBreveBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveBaseViewController.h; path = "Classes/View Controllers/BKBreveBaseViewController.h"; sourceTree = "<group>"; };
+		D366A5621836634A00F7157E /* BKBreveBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveBaseViewController.m; path = "Classes/View Controllers/BKBreveBaseViewController.m"; sourceTree = "<group>"; };
+		D366A5641836635F00F7157E /* BKBreveMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveMainViewController.h; path = "Classes/View Controllers/BKBreveMainViewController.h"; sourceTree = "<group>"; };
+		D366A5651836635F00F7157E /* BKBreveMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveMainViewController.m; path = "Classes/View Controllers/BKBreveMainViewController.m"; sourceTree = "<group>"; };
+		D366A5671836639F00F7157E /* BKBreveNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveNavigationController.h; path = "Classes/View Controllers/BKBreveNavigationController.h"; sourceTree = "<group>"; };
+		D366A5681836639F00F7157E /* BKBreveNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveNavigationController.m; path = "Classes/View Controllers/BKBreveNavigationController.m"; sourceTree = "<group>"; };
+		D366A56D18366C2900F7157E /* BKBreveSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveSettingsViewController.h; path = "Classes/View Controllers/BKBreveSettingsViewController.h"; sourceTree = "<group>"; };
+		D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveSettingsViewController.m; path = "Classes/View Controllers/BKBreveSettingsViewController.m"; sourceTree = "<group>"; };
+		D366A5701836701E00F7157E /* BKBreveSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveSettings.h; path = Classes/Core/BKBreveSettings.h; sourceTree = "<group>"; };
+		D366A5711836701E00F7157E /* BKBreveSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveSettings.m; path = Classes/Core/BKBreveSettings.m; sourceTree = "<group>"; };
+		D366A5731836722600F7157E /* BKBreveAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveAboutViewController.h; path = "Classes/View Controllers/BKBreveAboutViewController.h"; sourceTree = "<group>"; };
+		D366A5741836722600F7157E /* BKBreveAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveAboutViewController.m; path = "Classes/View Controllers/BKBreveAboutViewController.m"; sourceTree = "<group>"; };
+		D3CF9B361834E33200C7C33F /* Breve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D3CF9B3D1834E33200C7C33F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D3CF9B411834E33200C7C33F /* iBubs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBubs-Info.plist"; sourceTree = "<group>"; };
+		D3CF9B411834E33200C7C33F /* Breve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B431834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3CF9B451834E33200C7C33F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D3CF9B471834E33200C7C33F /* iBubs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBubs-Prefix.pch"; sourceTree = "<group>"; };
+		D3CF9B471834E33200C7C33F /* Breve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Breve-Prefix.pch"; sourceTree = "<group>"; };
 		D3CF9B481834E33200C7C33F /* BKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
 		D3CF9B491834E33200C7C33F /* BKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		D3CF9B4B1834E33200C7C33F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D3CF9B511834E33200C7C33F /* iBubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CF9B511834E33200C7C33F /* BreveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B521834E33200C7C33F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D3CF9B5A1834E33200C7C33F /* iBubsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBubsTests-Info.plist"; sourceTree = "<group>"; };
+		D3CF9B5A1834E33200C7C33F /* BreveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreveTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B5C1834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3CF9B681834E49300C7C33F /* BKBubsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBubsCore.h; path = Classes/Core/BKBubsCore.h; sourceTree = "<group>"; };
-		D3CF9B691834E49300C7C33F /* BKBubsCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBubsCore.m; path = Classes/Core/BKBubsCore.m; sourceTree = "<group>"; };
+		D3CF9B681834E49300C7C33F /* BKBreveCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveCore.h; path = Classes/Core/BKBreveCore.h; sourceTree = "<group>"; };
+		D3CF9B691834E49300C7C33F /* BKBreveCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveCore.m; path = Classes/Core/BKBreveCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 		D3CF9B2D1834E33200C7C33F = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B3F1834E33200C7C33F /* iBubs */,
-				D3CF9B581834E33200C7C33F /* iBubsTests */,
+				D3CF9B3F1834E33200C7C33F /* Breve */,
+				D3CF9B581834E33200C7C33F /* BreveTests */,
 				D3CF9B381834E33200C7C33F /* Frameworks */,
 				D3CF9B371834E33200C7C33F /* Products */,
 			);
@@ -123,8 +123,8 @@
 		D3CF9B371834E33200C7C33F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B361834E33200C7C33F /* Bubs.app */,
-				D3CF9B511834E33200C7C33F /* iBubsTests.xctest */,
+				D3CF9B361834E33200C7C33F /* Breve.app */,
+				D3CF9B511834E33200C7C33F /* BreveTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3CF9B3F1834E33200C7C33F /* iBubs */ = {
+		D3CF9B3F1834E33200C7C33F /* Breve */ = {
 			isa = PBXGroup;
 			children = (
 				D366A55D183662E000F7157E /* Views */,
@@ -148,49 +148,51 @@
 				D3CF9B491834E33200C7C33F /* BKAppDelegate.m */,
 				D3CF9B4B1834E33200C7C33F /* Images.xcassets */,
 				D3CF9B401834E33200C7C33F /* Supporting Files */,
-				D3CF9B681834E49300C7C33F /* BKBubsCore.h */,
-				D3CF9B691834E49300C7C33F /* BKBubsCore.m */,
+				D3CF9B681834E49300C7C33F /* BKBreveCore.h */,
+				D3CF9B691834E49300C7C33F /* BKBreveCore.m */,
 				D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */,
-				D366A5611836634A00F7157E /* BKBubsBaseViewController.h */,
-				D366A5621836634A00F7157E /* BKBubsBaseViewController.m */,
-				D366A5641836635F00F7157E /* BKBubsMainViewController.h */,
-				D366A5651836635F00F7157E /* BKBubsMainViewController.m */,
-				D366A5671836639F00F7157E /* BKBubsNavigationController.h */,
-				D366A5681836639F00F7157E /* BKBubsNavigationController.m */,
-				D366A56D18366C2900F7157E /* BKBubsSettingsViewController.h */,
-				D366A56E18366C2900F7157E /* BKBubsSettingsViewController.m */,
-				D366A5731836722600F7157E /* BKBubsAboutViewController.h */,
-				D366A5741836722600F7157E /* BKBubsAboutViewController.m */,
-				D366A5701836701E00F7157E /* BKBubsSettings.h */,
-				D366A5711836701E00F7157E /* BKBubsSettings.m */,
+				D366A5611836634A00F7157E /* BKBreveBaseViewController.h */,
+				D366A5621836634A00F7157E /* BKBreveBaseViewController.m */,
+				D366A5641836635F00F7157E /* BKBreveMainViewController.h */,
+				D366A5651836635F00F7157E /* BKBreveMainViewController.m */,
+				D366A5671836639F00F7157E /* BKBreveNavigationController.h */,
+				D366A5681836639F00F7157E /* BKBreveNavigationController.m */,
+				D366A56D18366C2900F7157E /* BKBreveSettingsViewController.h */,
+				D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */,
+				D366A5731836722600F7157E /* BKBreveAboutViewController.h */,
+				D366A5741836722600F7157E /* BKBreveAboutViewController.m */,
+				D366A5701836701E00F7157E /* BKBreveSettings.h */,
+				D366A5711836701E00F7157E /* BKBreveSettings.m */,
 			);
+			name = Breve;
 			path = iBubs;
 			sourceTree = "<group>";
 		};
 		D3CF9B401834E33200C7C33F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B411834E33200C7C33F /* iBubs-Info.plist */,
+				D3CF9B411834E33200C7C33F /* Breve-Info.plist */,
 				D3CF9B421834E33200C7C33F /* InfoPlist.strings */,
 				D3CF9B451834E33200C7C33F /* main.m */,
-				D3CF9B471834E33200C7C33F /* iBubs-Prefix.pch */,
+				D3CF9B471834E33200C7C33F /* Breve-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D3CF9B581834E33200C7C33F /* iBubsTests */ = {
+		D3CF9B581834E33200C7C33F /* BreveTests */ = {
 			isa = PBXGroup;
 			children = (
-				D366A5561835557600F7157E /* BKBubsCoreTests.m */,
+				D366A5561835557600F7157E /* BKBreveCoreTests.m */,
 				D3CF9B591834E33200C7C33F /* Supporting Files */,
 			);
+			name = BreveTests;
 			path = iBubsTests;
 			sourceTree = "<group>";
 		};
 		D3CF9B591834E33200C7C33F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B5A1834E33200C7C33F /* iBubsTests-Info.plist */,
+				D3CF9B5A1834E33200C7C33F /* BreveTests-Info.plist */,
 				D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -199,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3CF9B351834E33200C7C33F /* iBubs */ = {
+		D3CF9B351834E33200C7C33F /* Breve */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CF9B621834E33200C7C33F /* Build configuration list for PBXNativeTarget "iBubs" */;
+			buildConfigurationList = D3CF9B621834E33200C7C33F /* Build configuration list for PBXNativeTarget "Breve" */;
 			buildPhases = (
 				D3CF9B321834E33200C7C33F /* Sources */,
 				D3CF9B331834E33200C7C33F /* Frameworks */,
@@ -211,14 +213,14 @@
 			);
 			dependencies = (
 			);
-			name = iBubs;
+			name = Breve;
 			productName = iBubs;
-			productReference = D3CF9B361834E33200C7C33F /* Bubs.app */;
+			productReference = D3CF9B361834E33200C7C33F /* Breve.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3CF9B501834E33200C7C33F /* iBubsTests */ = {
+		D3CF9B501834E33200C7C33F /* BreveTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CF9B651834E33200C7C33F /* Build configuration list for PBXNativeTarget "iBubsTests" */;
+			buildConfigurationList = D3CF9B651834E33200C7C33F /* Build configuration list for PBXNativeTarget "BreveTests" */;
 			buildPhases = (
 				D3CF9B4D1834E33200C7C33F /* Sources */,
 				D3CF9B4E1834E33200C7C33F /* Frameworks */,
@@ -229,9 +231,9 @@
 			dependencies = (
 				D3CF9B571834E33200C7C33F /* PBXTargetDependency */,
 			);
-			name = iBubsTests;
+			name = BreveTests;
 			productName = iBubsTests;
-			productReference = D3CF9B511834E33200C7C33F /* iBubsTests.xctest */;
+			productReference = D3CF9B511834E33200C7C33F /* BreveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D3CF9B311834E33200C7C33F /* Build configuration list for PBXProject "iBubs" */;
+			buildConfigurationList = D3CF9B311834E33200C7C33F /* Build configuration list for PBXProject "Breve" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3CF9B351834E33200C7C33F /* iBubs */,
-				D3CF9B501834E33200C7C33F /* iBubsTests */,
+				D3CF9B351834E33200C7C33F /* Breve */,
+				D3CF9B501834E33200C7C33F /* BreveTests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,14 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CF9B6A1834E49300C7C33F /* BKBubsCore.m in Sources */,
-				D366A5751836722600F7157E /* BKBubsAboutViewController.m in Sources */,
+				D3CF9B6A1834E49300C7C33F /* BKBreveCore.m in Sources */,
+				D366A5751836722600F7157E /* BKBreveAboutViewController.m in Sources */,
 				D366A560183662E000F7157E /* BKBubsSegmentedControl.m in Sources */,
-				D366A56F18366C2900F7157E /* BKBubsSettingsViewController.m in Sources */,
-				D366A5721836701E00F7157E /* BKBubsSettings.m in Sources */,
-				D366A5661836635F00F7157E /* BKBubsMainViewController.m in Sources */,
-				D366A5691836639F00F7157E /* BKBubsNavigationController.m in Sources */,
-				D366A5631836634A00F7157E /* BKBubsBaseViewController.m in Sources */,
+				D366A56F18366C2900F7157E /* BKBreveSettingsViewController.m in Sources */,
+				D366A5721836701E00F7157E /* BKBreveSettings.m in Sources */,
+				D366A5661836635F00F7157E /* BKBreveMainViewController.m in Sources */,
+				D366A5691836639F00F7157E /* BKBreveNavigationController.m in Sources */,
+				D366A5631836634A00F7157E /* BKBreveBaseViewController.m in Sources */,
 				D3CF9B461834E33200C7C33F /* main.m in Sources */,
 				D3CF9B4A1834E33200C7C33F /* BKAppDelegate.m in Sources */,
 			);
@@ -310,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D366A5571835557600F7157E /* BKBubsCoreTests.m in Sources */,
+				D366A5571835557600F7157E /* BKBreveCoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +321,7 @@
 /* Begin PBXTargetDependency section */
 		D3CF9B571834E33200C7C33F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3CF9B351834E33200C7C33F /* iBubs */;
+			target = D3CF9B351834E33200C7C33F /* Breve */;
 			targetProxy = D3CF9B561834E33200C7C33F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,9 +424,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
-				INFOPLIST_FILE = "iBubs/iBubs-Info.plist";
-				PRODUCT_NAME = Bubs;
+				GCC_PREFIX_HEADER = "iBubs/Breve-Prefix.pch";
+				INFOPLIST_FILE = "iBubs/Breve-Info.plist";
+				PRODUCT_NAME = Breve;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,9 +437,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
-				INFOPLIST_FILE = "iBubs/iBubs-Info.plist";
-				PRODUCT_NAME = Bubs;
+				GCC_PREFIX_HEADER = "iBubs/Breve-Prefix.pch";
+				INFOPLIST_FILE = "iBubs/Breve-Info.plist";
+				PRODUCT_NAME = Breve;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -458,8 +460,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "iBubsTests/iBubsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "iBubsTests/BreveTests-Info.plist";
+				PRODUCT_NAME = BreveTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -477,8 +479,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
-				INFOPLIST_FILE = "iBubsTests/iBubsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "iBubsTests/BreveTests-Info.plist";
+				PRODUCT_NAME = BreveTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -487,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3CF9B311834E33200C7C33F /* Build configuration list for PBXProject "iBubs" */ = {
+		D3CF9B311834E33200C7C33F /* Build configuration list for PBXProject "Breve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CF9B601834E33200C7C33F /* Debug */,
@@ -496,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CF9B621834E33200C7C33F /* Build configuration list for PBXNativeTarget "iBubs" */ = {
+		D3CF9B621834E33200C7C33F /* Build configuration list for PBXNativeTarget "Breve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CF9B631834E33200C7C33F /* Debug */,
@@ -505,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CF9B651834E33200C7C33F /* Build configuration list for PBXNativeTarget "iBubsTests" */ = {
+		D3CF9B651834E33200C7C33F /* Build configuration list for PBXNativeTarget "BreveTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CF9B661834E33200C7C33F /* Debug */,

@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsMainViewController.h"
+#import "BKBreveMainViewController.h"
 #import "BKBubsSegmentedControl.h"
-#import "BKBubsCore.h"
+#import "BKBreveCore.h"
 
-@interface BKBubsMainViewController () <UITextViewDelegate>
+@interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation BKBubsMainViewController
+@implementation BKBreveMainViewController
 
 #pragma mark - View Lifecycle
 
@@ -113,10 +113,10 @@
     BKBubsSegmentedControl *segmentedControl = sender;
     switch (segmentedControl.selectedSegmentIndex) {
         case BKBubsSegmentedControlIndexNormal:
-            self.textView.text = [[BKBubsCore sharedInstance] convertFromBubsToNormal:self.textView.text];
+            self.textView.text = [[BKBreveCore sharedInstance] convertFromBubsToNormal:self.textView.text];
             break;
         case BKBubsSegmentedControlIndexBubs:
-            self.textView.text = [[BKBubsCore sharedInstance] convertFromNormalToBubs:self.textView.text];
+            self.textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:self.textView.text];
             break;
         default:
             break;
@@ -141,7 +141,7 @@
 {
     if (self.segmentedControl.selectedSegmentIndex == BKBubsSegmentedControlIndexBubs)
     {
-        textView.text = [[BKBubsCore sharedInstance] convertFromNormalToBubs:textView.text];
+        textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:textView.text];
         [textView setSelectedRange:self.cursorRange];
     }
 }

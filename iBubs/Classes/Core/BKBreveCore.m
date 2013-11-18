@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsCore.h"
-@interface BKBubsCore ()
+#import "BKBreveCore.h"
+@interface BKBreveCore ()
 @property (strong, nonatomic) NSArray *normalLetters;
 @property (strong, nonatomic) NSArray *bubsLetters;
 @end
 
-@implementation BKBubsCore
+@implementation BKBreveCore
 
 + (id)sharedInstance
 {

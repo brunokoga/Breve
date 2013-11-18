@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BKBubsBaseViewController : UIViewController
+@interface BKBreveBaseViewController : UIViewController
 
 @end

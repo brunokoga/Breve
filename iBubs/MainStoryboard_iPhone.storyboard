@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Bubs Main View Controller-->
+        <!--Breve Main View Controller-->
         <scene sceneID="Otg-Vi-moi">
             <objects>
-                <viewController id="vMU-IH-vsx" customClass="BKBubsMainViewController" sceneMemberID="viewController">
+                <viewController id="vMU-IH-vsx" customClass="BKBreveMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eSm-WM-Yfi"/>
                         <viewControllerLayoutGuide type="bottom" id="JsK-W6-zFZ"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="754" y="121"/>
         </scene>
-        <!--Bubs Navigation Controller-->
+        <!--Breve Navigation Controller-->
         <scene sceneID="Qrj-ub-LFo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERJ-Ik-Da9" customClass="BKBubsNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERJ-Ik-Da9" customClass="BKBreveNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9rL-E7-S5I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="228" y="121"/>
         </scene>
-        <!--Bubs Navigation Controller-->
+        <!--Breve Navigation Controller-->
         <scene sceneID="FDF-RZ-oOQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHA-9x-24T" customClass="BKBubsNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHA-9x-24T" customClass="BKBreveNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IOP-Vp-Ats">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="1188" y="121"/>
         </scene>
-        <!--Bubs About View Controller - About-->
+        <!--Breve About View Controller - About-->
         <scene sceneID="ktX-TB-nOq">
             <objects>
-                <viewController id="rMn-G8-XvG" customClass="BKBubsAboutViewController" sceneMemberID="viewController">
+                <viewController id="rMn-G8-XvG" customClass="BKBreveAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZG-EC-KuW"/>
                         <viewControllerLayoutGuide type="bottom" id="IbE-uu-j3s"/>
@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="1788" y="758"/>
         </scene>
-        <!--Bubs Settings View Controller - Settings-->
+        <!--Breve Settings View Controller - Settings-->
         <scene sceneID="gFU-7u-gSd">
             <objects>
-                <tableViewController id="R8Z-l4-RPi" customClass="BKBubsSettingsViewController" sceneMemberID="viewController">
+                <tableViewController id="R8Z-l4-RPi" customClass="BKBreveSettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="cHb-37-nds">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BKBubsCore : NSObject
+@interface BKBreveCore : NSObject
 
 @property (strong, nonatomic, readonly) NSArray *normalLetters;
 @property (strong, nonatomic, readonly) NSArray *bubsLetters;

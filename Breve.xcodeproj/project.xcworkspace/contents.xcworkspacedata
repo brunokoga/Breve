@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iBubs.xcodeproj">
+      location = "self:Breve.xcodeproj">
    </FileRef>
 </Workspace>

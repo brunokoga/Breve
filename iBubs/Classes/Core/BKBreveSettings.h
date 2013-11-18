@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BKBubsSettings : NSObject
+@interface BKBreveSettings : NSObject
 
 @property (nonatomic, readonly) BOOL isColorModeOn;
 

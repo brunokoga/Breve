@@ -1,19 +1,21 @@
 //
-//  BKBubsAboutViewController.m
+//  BKBubsSettingsViewController.m
 //  iBubs
 //
 //  Created by Bruno Koga on 11/15/13.
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsAboutViewController.h"
+#import "BKBreveSettingsViewController.h"
 
-@interface BKBubsAboutViewController ()
+@interface BKBreveSettingsViewController ()
 
 @end
 
-@implementation BKBubsAboutViewController
-- (IBAction)dismissButtonPressed:(id)sender {
+@implementation BKBreveSettingsViewController
+
+
+- (IBAction)doneButtonPressed:(id)sender {
     [self dismissViewControllerAnimated:YES
                              completion:^{}];
 }

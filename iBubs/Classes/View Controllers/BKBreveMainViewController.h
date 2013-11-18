@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsBaseViewController.h"
+#import "BKBreveBaseViewController.h"
 
-@interface BKBubsMainViewController : BKBubsBaseViewController
+@interface BKBreveMainViewController : BKBreveBaseViewController
 
 @end

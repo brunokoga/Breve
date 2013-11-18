@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsNavigationController.h"
+#import "BKBreveNavigationController.h"
 
-@interface BKBubsNavigationController ()
+@interface BKBreveNavigationController ()
 
 @end
 
-@implementation BKBubsNavigationController
+@implementation BKBreveNavigationController
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Bruno Koga. All rights reserved.
 //
 
-#import "BKBubsSettings.h"
+#import "BKBreveSettings.h"
 
-@implementation BKBubsSettings
+@implementation BKBreveSettings
 
 + (instancetype)generalSettings;
 {
