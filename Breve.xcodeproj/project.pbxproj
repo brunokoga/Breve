@@ -60,12 +60,10 @@
 		D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettingsViewController.m; sourceTree = "<group>"; };
 		D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
 		D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
-		D33EBF60183A3D1900272403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D33EBF61183A3D1900272403 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D33EBF62183A3D1900272403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
-		D33EBF80183A3D7400272403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BreveTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B361834E33200C7C33F /* Breve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,15 +100,9 @@
 		D33EBF46183A3D1900272403 /* Breve */ = {
 			isa = PBXGroup;
 			children = (
-				D33EBF47183A3D1900272403 /* BKAppDelegate.h */,
-				D33EBF48183A3D1900272403 /* BKAppDelegate.m */,
-				D33EBF49183A3D1900272403 /* Breve-Info.plist */,
-				D33EBF4A183A3D1900272403 /* Breve-Prefix.pch */,
-				D33EBF4B183A3D1900272403 /* Classes */,
-				D33EBF5F183A3D1900272403 /* InfoPlist.strings */,
 				D33EBF61183A3D1900272403 /* Images.xcassets */,
-				D33EBF62183A3D1900272403 /* main.m */,
-				D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */,
+				D33EBF4B183A3D1900272403 /* Classes */,
+				D344120B183A4B680032CC85 /* Supporting Files */,
 			);
 			path = Breve;
 			sourceTree = "<group>";
@@ -167,9 +159,21 @@
 			children = (
 				D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */,
 				D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */,
-				D33EBF7F183A3D7400272403 /* InfoPlist.strings */,
 			);
 			path = BrevesTests;
+			sourceTree = "<group>";
+		};
+		D344120B183A4B680032CC85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D33EBF47183A3D1900272403 /* BKAppDelegate.h */,
+				D33EBF48183A3D1900272403 /* BKAppDelegate.m */,
+				D33EBF49183A3D1900272403 /* Breve-Info.plist */,
+				D33EBF4A183A3D1900272403 /* Breve-Prefix.pch */,
+				D33EBF62183A3D1900272403 /* main.m */,
+				D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D3CF9B2D1834E33200C7C33F = {
@@ -328,25 +332,6 @@
 			targetProxy = D3CF9B561834E33200C7C33F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D33EBF5F183A3D1900272403 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D33EBF60183A3D1900272403 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D33EBF7F183A3D7400272403 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D33EBF80183A3D7400272403 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D3CF9B601834E33200C7C33F /* Debug */ = {

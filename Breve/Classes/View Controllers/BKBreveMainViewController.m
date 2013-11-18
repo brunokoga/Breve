@@ -158,6 +158,6 @@
 
 - (void)textViewDidChangeSelection:(UITextView *)textView
 {
-    self.cursorRange = self.textView.selectedRange;
+//    self.cursorRange = self.textView.selectedRange;
 }
 @end
