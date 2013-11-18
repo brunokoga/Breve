@@ -7,27 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D366A5571835557600F7157E /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5561835557600F7157E /* BKBreveCoreTests.m */; };
-		D366A5591836613D00F7157E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */; };
-		D366A560183662E000F7157E /* BKBubsSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A55F183662E000F7157E /* BKBubsSegmentedControl.m */; };
-		D366A5631836634A00F7157E /* BKBreveBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5621836634A00F7157E /* BKBreveBaseViewController.m */; };
-		D366A5661836635F00F7157E /* BKBreveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5651836635F00F7157E /* BKBreveMainViewController.m */; };
-		D366A5691836639F00F7157E /* BKBreveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5681836639F00F7157E /* BKBreveNavigationController.m */; };
-		D366A56F18366C2900F7157E /* BKBreveSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */; };
-		D366A5721836701E00F7157E /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5711836701E00F7157E /* BKBreveSettings.m */; };
-		D366A5751836722600F7157E /* BKBreveAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366A5741836722600F7157E /* BKBreveAboutViewController.m */; };
+		D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF48183A3D1900272403 /* BKAppDelegate.m */; };
+		D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF4E183A3D1900272403 /* BKBreveCore.m */; };
+		D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF50183A3D1900272403 /* BKBreveSettings.m */; };
+		D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF53183A3D1900272403 /* BKBreveAboutViewController.m */; };
+		D33EBF69183A3D1900272403 /* BKBreveBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF55183A3D1900272403 /* BKBreveBaseViewController.m */; };
+		D33EBF6A183A3D1900272403 /* BKBreveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF57183A3D1900272403 /* BKBreveMainViewController.m */; };
+		D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */; };
+		D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */; };
+		D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */; };
+		D33EBF6F183A3D1900272403 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF61183A3D1900272403 /* Images.xcassets */; };
+		D33EBF70183A3D1900272403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF62183A3D1900272403 /* main.m */; };
+		D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */; };
+		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
+		D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */; };
+		D38A5E5D183A3EAB00C015F1 /* BreveTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */; };
 		D3CF9B3A1834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B3C1834E33200C7C33F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */; };
 		D3CF9B3E1834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
-		D3CF9B441834E33200C7C33F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B421834E33200C7C33F /* InfoPlist.strings */; };
-		D3CF9B461834E33200C7C33F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B451834E33200C7C33F /* main.m */; };
-		D3CF9B4A1834E33200C7C33F /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B491834E33200C7C33F /* BKAppDelegate.m */; };
-		D3CF9B4C1834E33200C7C33F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B4B1834E33200C7C33F /* Images.xcassets */; };
-		D3CF9B531834E33200C7C33F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
 		D3CF9B541834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
-		D3CF9B5D1834E33200C7C33F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */; };
-		D3CF9B6A1834E49300C7C33F /* BKBreveCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF9B691834E49300C7C33F /* BKBreveCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,39 +40,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D366A5561835557600F7157E /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
-		D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		D366A55E183662E000F7157E /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
-		D366A55F183662E000F7157E /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
-		D366A5611836634A00F7157E /* BKBreveBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveBaseViewController.h; path = "Classes/View Controllers/BKBreveBaseViewController.h"; sourceTree = "<group>"; };
-		D366A5621836634A00F7157E /* BKBreveBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveBaseViewController.m; path = "Classes/View Controllers/BKBreveBaseViewController.m"; sourceTree = "<group>"; };
-		D366A5641836635F00F7157E /* BKBreveMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveMainViewController.h; path = "Classes/View Controllers/BKBreveMainViewController.h"; sourceTree = "<group>"; };
-		D366A5651836635F00F7157E /* BKBreveMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveMainViewController.m; path = "Classes/View Controllers/BKBreveMainViewController.m"; sourceTree = "<group>"; };
-		D366A5671836639F00F7157E /* BKBreveNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveNavigationController.h; path = "Classes/View Controllers/BKBreveNavigationController.h"; sourceTree = "<group>"; };
-		D366A5681836639F00F7157E /* BKBreveNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveNavigationController.m; path = "Classes/View Controllers/BKBreveNavigationController.m"; sourceTree = "<group>"; };
-		D366A56D18366C2900F7157E /* BKBreveSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveSettingsViewController.h; path = "Classes/View Controllers/BKBreveSettingsViewController.h"; sourceTree = "<group>"; };
-		D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveSettingsViewController.m; path = "Classes/View Controllers/BKBreveSettingsViewController.m"; sourceTree = "<group>"; };
-		D366A5701836701E00F7157E /* BKBreveSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveSettings.h; path = Classes/Core/BKBreveSettings.h; sourceTree = "<group>"; };
-		D366A5711836701E00F7157E /* BKBreveSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveSettings.m; path = Classes/Core/BKBreveSettings.m; sourceTree = "<group>"; };
-		D366A5731836722600F7157E /* BKBreveAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveAboutViewController.h; path = "Classes/View Controllers/BKBreveAboutViewController.h"; sourceTree = "<group>"; };
-		D366A5741836722600F7157E /* BKBreveAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveAboutViewController.m; path = "Classes/View Controllers/BKBreveAboutViewController.m"; sourceTree = "<group>"; };
+		D33EBF47183A3D1900272403 /* BKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
+		D33EBF48183A3D1900272403 /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
+		D33EBF49183A3D1900272403 /* Breve-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
+		D33EBF4A183A3D1900272403 /* Breve-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Breve-Prefix.pch"; sourceTree = "<group>"; };
+		D33EBF4D183A3D1900272403 /* BKBreveCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveCore.h; sourceTree = "<group>"; };
+		D33EBF4E183A3D1900272403 /* BKBreveCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCore.m; sourceTree = "<group>"; };
+		D33EBF4F183A3D1900272403 /* BKBreveSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveSettings.h; sourceTree = "<group>"; };
+		D33EBF50183A3D1900272403 /* BKBreveSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettings.m; sourceTree = "<group>"; };
+		D33EBF52183A3D1900272403 /* BKBreveAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveAboutViewController.h; sourceTree = "<group>"; };
+		D33EBF53183A3D1900272403 /* BKBreveAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveAboutViewController.m; sourceTree = "<group>"; };
+		D33EBF54183A3D1900272403 /* BKBreveBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveBaseViewController.h; sourceTree = "<group>"; };
+		D33EBF55183A3D1900272403 /* BKBreveBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveBaseViewController.m; sourceTree = "<group>"; };
+		D33EBF56183A3D1900272403 /* BKBreveMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveMainViewController.h; sourceTree = "<group>"; };
+		D33EBF57183A3D1900272403 /* BKBreveMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveMainViewController.m; sourceTree = "<group>"; };
+		D33EBF58183A3D1900272403 /* BKBreveNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveNavigationController.h; sourceTree = "<group>"; };
+		D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveNavigationController.m; sourceTree = "<group>"; };
+		D33EBF5A183A3D1900272403 /* BKBreveSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveSettingsViewController.h; sourceTree = "<group>"; };
+		D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettingsViewController.m; sourceTree = "<group>"; };
+		D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
+		D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
+		D33EBF60183A3D1900272403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D33EBF61183A3D1900272403 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D33EBF62183A3D1900272403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
+		D33EBF80183A3D7400272403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BreveTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B361834E33200C7C33F /* Breve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D3CF9B3D1834E33200C7C33F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D3CF9B411834E33200C7C33F /* Breve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
-		D3CF9B431834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3CF9B451834E33200C7C33F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D3CF9B471834E33200C7C33F /* Breve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Breve-Prefix.pch"; sourceTree = "<group>"; };
-		D3CF9B481834E33200C7C33F /* BKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
-		D3CF9B491834E33200C7C33F /* BKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
-		D3CF9B4B1834E33200C7C33F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3CF9B511834E33200C7C33F /* BreveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B521834E33200C7C33F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D3CF9B5A1834E33200C7C33F /* BreveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreveTests-Info.plist"; sourceTree = "<group>"; };
-		D3CF9B5C1834E33200C7C33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3CF9B681834E49300C7C33F /* BKBreveCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveCore.h; path = Classes/Core/BKBreveCore.h; sourceTree = "<group>"; };
-		D3CF9B691834E49300C7C33F /* BKBreveCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveCore.m; path = Classes/Core/BKBreveCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CF9B531834E33200C7C33F /* XCTest.framework in Frameworks */,
+				D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */,
 				D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */,
 				D3CF9B541834E33200C7C33F /* Foundation.framework in Frameworks */,
 			);
@@ -100,21 +99,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D366A55D183662E000F7157E /* Views */ = {
+		D33EBF46183A3D1900272403 /* Breve */ = {
 			isa = PBXGroup;
 			children = (
-				D366A55E183662E000F7157E /* BKBubsSegmentedControl.h */,
-				D366A55F183662E000F7157E /* BKBubsSegmentedControl.m */,
+				D33EBF47183A3D1900272403 /* BKAppDelegate.h */,
+				D33EBF48183A3D1900272403 /* BKAppDelegate.m */,
+				D33EBF49183A3D1900272403 /* Breve-Info.plist */,
+				D33EBF4A183A3D1900272403 /* Breve-Prefix.pch */,
+				D33EBF4B183A3D1900272403 /* Classes */,
+				D33EBF5F183A3D1900272403 /* InfoPlist.strings */,
+				D33EBF61183A3D1900272403 /* Images.xcassets */,
+				D33EBF62183A3D1900272403 /* main.m */,
+				D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */,
 			);
-			name = Views;
-			path = Classes/Views;
+			path = Breve;
+			sourceTree = "<group>";
+		};
+		D33EBF4B183A3D1900272403 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D33EBF4C183A3D1900272403 /* Core */,
+				D33EBF51183A3D1900272403 /* View Controllers */,
+				D33EBF5C183A3D1900272403 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D33EBF4C183A3D1900272403 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D33EBF4D183A3D1900272403 /* BKBreveCore.h */,
+				D33EBF4E183A3D1900272403 /* BKBreveCore.m */,
+				D33EBF4F183A3D1900272403 /* BKBreveSettings.h */,
+				D33EBF50183A3D1900272403 /* BKBreveSettings.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D33EBF51183A3D1900272403 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D33EBF52183A3D1900272403 /* BKBreveAboutViewController.h */,
+				D33EBF53183A3D1900272403 /* BKBreveAboutViewController.m */,
+				D33EBF54183A3D1900272403 /* BKBreveBaseViewController.h */,
+				D33EBF55183A3D1900272403 /* BKBreveBaseViewController.m */,
+				D33EBF56183A3D1900272403 /* BKBreveMainViewController.h */,
+				D33EBF57183A3D1900272403 /* BKBreveMainViewController.m */,
+				D33EBF58183A3D1900272403 /* BKBreveNavigationController.h */,
+				D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */,
+				D33EBF5A183A3D1900272403 /* BKBreveSettingsViewController.h */,
+				D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D33EBF5C183A3D1900272403 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */,
+				D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D33EBF7C183A3D7400272403 /* BrevesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */,
+				D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */,
+				D33EBF7F183A3D7400272403 /* InfoPlist.strings */,
+			);
+			path = BrevesTests;
 			sourceTree = "<group>";
 		};
 		D3CF9B2D1834E33200C7C33F = {
 			isa = PBXGroup;
 			children = (
-				D3CF9B3F1834E33200C7C33F /* Breve */,
-				D3CF9B581834E33200C7C33F /* BreveTests */,
+				D33EBF7C183A3D7400272403 /* BrevesTests */,
+				D33EBF46183A3D1900272403 /* Breve */,
 				D3CF9B381834E33200C7C33F /* Frameworks */,
 				D3CF9B371834E33200C7C33F /* Products */,
 			);
@@ -138,64 +200,6 @@
 				D3CF9B521834E33200C7C33F /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D3CF9B3F1834E33200C7C33F /* Breve */ = {
-			isa = PBXGroup;
-			children = (
-				D366A55D183662E000F7157E /* Views */,
-				D3CF9B481834E33200C7C33F /* BKAppDelegate.h */,
-				D3CF9B491834E33200C7C33F /* BKAppDelegate.m */,
-				D3CF9B4B1834E33200C7C33F /* Images.xcassets */,
-				D3CF9B401834E33200C7C33F /* Supporting Files */,
-				D3CF9B681834E49300C7C33F /* BKBreveCore.h */,
-				D3CF9B691834E49300C7C33F /* BKBreveCore.m */,
-				D366A5581836613D00F7157E /* MainStoryboard_iPhone.storyboard */,
-				D366A5611836634A00F7157E /* BKBreveBaseViewController.h */,
-				D366A5621836634A00F7157E /* BKBreveBaseViewController.m */,
-				D366A5641836635F00F7157E /* BKBreveMainViewController.h */,
-				D366A5651836635F00F7157E /* BKBreveMainViewController.m */,
-				D366A5671836639F00F7157E /* BKBreveNavigationController.h */,
-				D366A5681836639F00F7157E /* BKBreveNavigationController.m */,
-				D366A56D18366C2900F7157E /* BKBreveSettingsViewController.h */,
-				D366A56E18366C2900F7157E /* BKBreveSettingsViewController.m */,
-				D366A5731836722600F7157E /* BKBreveAboutViewController.h */,
-				D366A5741836722600F7157E /* BKBreveAboutViewController.m */,
-				D366A5701836701E00F7157E /* BKBreveSettings.h */,
-				D366A5711836701E00F7157E /* BKBreveSettings.m */,
-			);
-			name = Breve;
-			path = iBubs;
-			sourceTree = "<group>";
-		};
-		D3CF9B401834E33200C7C33F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D3CF9B411834E33200C7C33F /* Breve-Info.plist */,
-				D3CF9B421834E33200C7C33F /* InfoPlist.strings */,
-				D3CF9B451834E33200C7C33F /* main.m */,
-				D3CF9B471834E33200C7C33F /* Breve-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D3CF9B581834E33200C7C33F /* BreveTests */ = {
-			isa = PBXGroup;
-			children = (
-				D366A5561835557600F7157E /* BKBreveCoreTests.m */,
-				D3CF9B591834E33200C7C33F /* Supporting Files */,
-			);
-			name = BreveTests;
-			path = iBubsTests;
-			sourceTree = "<group>";
-		};
-		D3CF9B591834E33200C7C33F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D3CF9B5A1834E33200C7C33F /* BreveTests-Info.plist */,
-				D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +278,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D366A5591836613D00F7157E /* MainStoryboard_iPhone.storyboard in Resources */,
-				D3CF9B441834E33200C7C33F /* InfoPlist.strings in Resources */,
-				D3CF9B4C1834E33200C7C33F /* Images.xcassets in Resources */,
+				D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */,
+				D33EBF6F183A3D1900272403 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CF9B5D1834E33200C7C33F /* InfoPlist.strings in Resources */,
+				D38A5E5D183A3EAB00C015F1 /* BreveTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,16 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CF9B6A1834E49300C7C33F /* BKBreveCore.m in Sources */,
-				D366A5751836722600F7157E /* BKBreveAboutViewController.m in Sources */,
-				D366A560183662E000F7157E /* BKBubsSegmentedControl.m in Sources */,
-				D366A56F18366C2900F7157E /* BKBreveSettingsViewController.m in Sources */,
-				D366A5721836701E00F7157E /* BKBreveSettings.m in Sources */,
-				D366A5661836635F00F7157E /* BKBreveMainViewController.m in Sources */,
-				D366A5691836639F00F7157E /* BKBreveNavigationController.m in Sources */,
-				D366A5631836634A00F7157E /* BKBreveBaseViewController.m in Sources */,
-				D3CF9B461834E33200C7C33F /* main.m in Sources */,
-				D3CF9B4A1834E33200C7C33F /* BKAppDelegate.m in Sources */,
+				D33EBF69183A3D1900272403 /* BKBreveBaseViewController.m in Sources */,
+				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
+				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
+				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
+				D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */,
+				D33EBF70183A3D1900272403 /* main.m in Sources */,
+				D33EBF6A183A3D1900272403 /* BKBreveMainViewController.m in Sources */,
+				D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */,
+				D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */,
+				D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D366A5571835557600F7157E /* BKBreveCoreTests.m in Sources */,
+				D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,18 +330,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D3CF9B421834E33200C7C33F /* InfoPlist.strings */ = {
+		D33EBF5F183A3D1900272403 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D3CF9B431834E33200C7C33F /* en */,
+				D33EBF60183A3D1900272403 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D3CF9B5B1834E33200C7C33F /* InfoPlist.strings */ = {
+		D33EBF7F183A3D7400272403 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D3CF9B5C1834E33200C7C33F /* en */,
+				D33EBF80183A3D7400272403 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -424,8 +427,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/Breve-Prefix.pch";
-				INFOPLIST_FILE = "iBubs/Breve-Info.plist";
+				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
+				INFOPLIST_FILE = "Breve/Breve-Info.plist";
 				PRODUCT_NAME = Breve;
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,8 +440,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/Breve-Prefix.pch";
-				INFOPLIST_FILE = "iBubs/Breve-Info.plist";
+				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
+				INFOPLIST_FILE = "Breve/Breve-Info.plist";
 				PRODUCT_NAME = Breve;
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,19 +451,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBubs.app/iBubs";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breve.app/Breve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
+				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "iBubsTests/BreveTests-Info.plist";
+				INFOPLIST_FILE = "";
 				PRODUCT_NAME = BreveTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -471,15 +474,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBubs.app/iBubs";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breve.app/Breve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iBubs/iBubs-Prefix.pch";
-				INFOPLIST_FILE = "iBubsTests/BreveTests-Info.plist";
+				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
+				INFOPLIST_FILE = "";
 				PRODUCT_NAME = BreveTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
