@@ -10,10 +10,17 @@
 
 @interface BKBreveSettings : NSObject
 
+@property (nonatomic) BOOL autocorrection;
+@property (nonatomic) BOOL autocapitalization;
+@property (nonatomic) BOOL spellChecking;
+
 @property (nonatomic, readonly) BOOL isColorModeOn;
 
 + (instancetype)generalSettings;
 
+//TODO: implement
 - (void)enableColorMode;
 - (void)disableColorMode;
+
+
 @end

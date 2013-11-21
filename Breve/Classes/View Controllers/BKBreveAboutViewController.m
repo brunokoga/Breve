@@ -13,9 +13,5 @@
 @end
 
 @implementation BKBreveAboutViewController
-- (IBAction)dismissButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES
-                             completion:^{}];
-}
 
 @end

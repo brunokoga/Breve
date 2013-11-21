@@ -35,4 +35,54 @@
     _isColorModeOn = NO;
 }
 
+- (void)setBOOL:(BOOL)boolValue forKey:(NSString *)key
+{
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    [standardUserDefaults setBool:boolValue
+                           forKey:key];
+    [standardUserDefaults synchronize];
+}
+
+- (BOOL)boolForKey:(NSString *)key
+{
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    return [standardUserDefaults boolForKey:key];
+}
+
+static NSString * const kBreveSettingsAutocorrection = @"kBreveSettingsAutocorrection";
+
+- (BOOL)autocorrection
+{
+    return [self boolForKey:kBreveSettingsAutocorrection];
+}
+
+- (void)setAutocorrection:(BOOL)autocorrection
+{
+    [self setBOOL:autocorrection forKey:kBreveSettingsAutocorrection];
+}
+
+static NSString * const kBreveSettingsAutocapitalization = @"kBreveSettingsAutocapitalization";
+
+- (BOOL)autocapitalization
+{
+    return [self boolForKey:kBreveSettingsAutocapitalization];
+}
+
+- (void)setAutocapitalization:(BOOL)autocapitalization
+{
+    [self setBOOL:autocapitalization forKey:kBreveSettingsAutocapitalization];
+}
+
+static NSString * const kBreveSettingsSpellChecking = @"kBreveSettingsSpellChecking";
+
+- (BOOL)spellChecking
+{
+    return [self boolForKey:kBreveSettingsSpellChecking];
+}
+
+- (void)setSpellChecking:(BOOL)spellChecking
+{
+    [self setBOOL:spellChecking forKey:kBreveSettingsSpellChecking];
+}
+
 @end

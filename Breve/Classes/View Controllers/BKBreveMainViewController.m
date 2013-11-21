@@ -9,6 +9,7 @@
 #import "BKBreveMainViewController.h"
 #import "BKBubsSegmentedControl.h"
 #import "BKBreveCore.h"
+#import "BKBreveSettings.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -29,7 +30,11 @@
     [self setUpGestureRecognizers];
 }
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self applySettings];
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -45,6 +50,16 @@
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
     [self.textView becomeFirstResponder];
+}
+
+- (void)applySettings
+{
+    BKBreveSettings *settings = [BKBreveSettings generalSettings];
+    self.textView.autocapitalizationType = [settings autocapitalization] ? UITextAutocapitalizationTypeSentences : UITextAutocapitalizationTypeNone;
+    
+    self.textView.autocorrectionType = [settings autocorrection] ? UITextAutocorrectionTypeDefault : UITextAutocapitalizationTypeNone;
+    
+    self.textView.spellCheckingType = [settings spellChecking] ? UITextSpellCheckingTypeDefault : UITextSpellCheckingTypeNo;
 }
 
 - (void)viewDidDisappear:(BOOL)animated
