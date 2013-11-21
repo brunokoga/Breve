@@ -22,3 +22,5 @@ Pods
 
 #build dir
 build/
+*.ipa
+*.dSYM.zip
