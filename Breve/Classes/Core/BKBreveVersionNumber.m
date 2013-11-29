@@ -14,7 +14,7 @@
 {
     NSString *versionString = [[NSBundle mainBundle]
                                    objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-#ifdef DEBUG
+#ifdef BETA
     NSString *buildNumberString = [[NSBundle mainBundle]
                                    objectForInfoDictionaryKey:@"CFBundleVersion"];
     versionString = [versionString stringByAppendingFormat:@" (%@)", buildNumberString];
