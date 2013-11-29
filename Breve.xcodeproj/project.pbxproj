@@ -22,6 +22,7 @@
 		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
 		D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */; };
 		D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */; };
+		D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADAC1848E18000AE3E91 /* BKBreveVersionNumber.m */; };
 		D38A5E5D183A3EAB00C015F1 /* BreveTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */; };
 		D3CF9B3A1834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B3C1834E33200C7C33F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3B1834E33200C7C33F /* CoreGraphics.framework */; };
@@ -67,6 +68,8 @@
 		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
 		D37CADA71848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+AccentsAndDiacritics.h"; path = "Classes/Categories/NSString+AccentsAndDiacritics.h"; sourceTree = "<group>"; };
 		D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+AccentsAndDiacritics.m"; path = "Classes/Categories/NSString+AccentsAndDiacritics.m"; sourceTree = "<group>"; };
+		D37CADAB1848E18000AE3E91 /* BKBreveVersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveVersionNumber.h; sourceTree = "<group>"; };
+		D37CADAC1848E18000AE3E91 /* BKBreveVersionNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveVersionNumber.m; sourceTree = "<group>"; };
 		D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BreveTests-Info.plist"; sourceTree = "<group>"; };
 		D3CF9B361834E33200C7C33F /* Breve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B391834E33200C7C33F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				D33EBF4E183A3D1900272403 /* BKBreveCore.m */,
 				D33EBF4F183A3D1900272403 /* BKBreveSettings.h */,
 				D33EBF50183A3D1900272403 /* BKBreveSettings.m */,
+				D37CADAB1848E18000AE3E91 /* BKBreveVersionNumber.h */,
+				D37CADAC1848E18000AE3E91 /* BKBreveVersionNumber.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33EBF69183A3D1900272403 /* BKBreveBaseViewController.m in Sources */,
+				D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */,
 				D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */,
 				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
