@@ -133,6 +133,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="Uz7-cu-6VC"/>
+                    <connections>
+                        <outlet property="textView" destination="9zw-EH-kpB" id="N4Y-Xz-JKP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfe-Oy-cVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
