@@ -10,9 +10,11 @@
 #import "BKBubsSegmentedControl.h"
 #import "BKBreveCore.h"
 #import "BKBreveSettings.h"
+#import "NSString+AccentsAndDiacritics.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (copy, nonatomic) NSString *regularText;
 @property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
 @property (nonatomic) NSRange cursorRange;
@@ -128,11 +130,20 @@
     BKBubsSegmentedControl *segmentedControl = sender;
     switch (segmentedControl.selectedSegmentIndex) {
         case BKBubsSegmentedControlIndexNormal:
-            self.textView.text = [[BKBreveCore sharedInstance] convertFromBubsToNormal:self.textView.text];
+            self.textView.text = self.regularText;
             break;
         case BKBubsSegmentedControlIndexBubs:
-            self.textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:self.textView.text];
+        {
+            self.regularText = self.textView.text;
+            NSString *textToBeConverted = self.textView.text;
+            BKBreveSettings *settings = [BKBreveSettings generalSettings];
+            if ([settings removeAccentsAndDiacritics])
+            {
+                textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
+            }
+            self.textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:textToBeConverted];
             break;
+        }
         default:
             break;
     }
@@ -171,8 +182,4 @@
     
 }
 
-- (void)textViewDidChangeSelection:(UITextView *)textView
-{
-//    self.cursorRange = self.textView.selectedRange;
-}
 @end

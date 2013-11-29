@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *autocapitalizationSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *autocorrectionSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *spellCheckingSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *accentsAndDiacriticsSwitch;
 
 @end
 
@@ -30,6 +31,7 @@
     self.autocapitalizationSwitch.on = [settings autocapitalization];
     self.autocorrectionSwitch.on = [settings autocorrection];
     self.spellCheckingSwitch.on = [settings spellChecking];
+    self.accentsAndDiacriticsSwitch.on = [settings removeAccentsAndDiacritics];
     
     
     
@@ -56,6 +58,9 @@
     } else if (s == self.spellCheckingSwitch)
     {
         [settings setSpellChecking:s.on];
+    } else if (s == self.accentsAndDiacriticsSwitch)
+    {
+        [settings setRemoveAccentsAndDiacritics:s.on];
     }
 }
 @end

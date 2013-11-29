@@ -13,6 +13,7 @@
 @property (nonatomic) BOOL autocorrection;
 @property (nonatomic) BOOL autocapitalization;
 @property (nonatomic) BOOL spellChecking;
+@property (nonatomic) BOOL removeAccentsAndDiacritics;
 
 @property (nonatomic, readonly) BOOL isColorModeOn;
 

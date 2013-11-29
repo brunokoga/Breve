@@ -85,4 +85,16 @@ static NSString * const kBreveSettingsSpellChecking = @"kBreveSettingsSpellCheck
     [self setBOOL:spellChecking forKey:kBreveSettingsSpellChecking];
 }
 
+static NSString * const kBreveSettingsRemoveAccentsAndDiacritics = @"kBreveSettingsRemoveAccentsAndDiacritics";
+
+- (BOOL)removeAccentsAndDiacritics
+{
+    return [self boolForKey:kBreveSettingsRemoveAccentsAndDiacritics];
+}
+
+- (void)setRemoveAccentsAndDiacritics:(BOOL)removeAccentsAndDiacritics
+{
+    [self setBOOL:removeAccentsAndDiacritics forKey:kBreveSettingsRemoveAccentsAndDiacritics];
+}
+
 @end
