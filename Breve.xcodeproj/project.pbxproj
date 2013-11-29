@@ -399,6 +399,7 @@
 				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
 				INFOPLIST_FILE = "Breve/Breve-Info.plist";
 				PRODUCT_NAME = Breve;
+				PROVISIONING_PROFILE = "A65F2973-40CE-41F0-999B-01B69DD7A394";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Beta;
@@ -507,6 +508,7 @@
 				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
 				INFOPLIST_FILE = "Breve/Breve-Info.plist";
 				PRODUCT_NAME = Breve;
+				PROVISIONING_PROFILE = "DED76100-958D-42D4-AE76-5E813DFB2B32";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,6 +523,7 @@
 				GCC_PREFIX_HEADER = "Breve/Breve-Prefix.pch";
 				INFOPLIST_FILE = "Breve/Breve-Info.plist";
 				PRODUCT_NAME = Breve;
+				PROVISIONING_PROFILE = "4EFDC024-0B18-4DD3-BC64-EA5319FBC8A4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
