@@ -178,8 +178,9 @@
     NSUInteger location = range.location + [text length];
     NSUInteger length = 0;
     self.cursorRange = NSMakeRange(location, length);
+    //Fixes regular text
+    self.regularText = [self.regularText stringByReplacingCharactersInRange:range withString:text];
     return YES;
-    
 }
 
 @end
