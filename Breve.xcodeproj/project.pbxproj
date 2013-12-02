@@ -29,6 +29,8 @@
 		D3CF9B3E1834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
 		D3CF9B541834E33200C7C33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B391834E33200C7C33F /* Foundation.framework */; };
 		D3CF9B551834E33200C7C33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B3D1834E33200C7C33F /* UIKit.framework */; };
+		D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B95B184CCB4600F589EB /* BKBreveBasicTheme.m */; };
+		D3D4B95F184CCB4600F589EB /* BKThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B95D184CCB4600F589EB /* BKThemeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,11 @@
 		D3CF9B3D1834E33200C7C33F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3CF9B511834E33200C7C33F /* BreveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF9B521834E33200C7C33F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3D4B959184CCB0600F589EB /* BKTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTheme.h; path = Theme/BKTheme.h; sourceTree = "<group>"; };
+		D3D4B95A184CCB4600F589EB /* BKBreveBasicTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveBasicTheme.h; path = Theme/BKBreveBasicTheme.h; sourceTree = "<group>"; };
+		D3D4B95B184CCB4600F589EB /* BKBreveBasicTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveBasicTheme.m; path = Theme/BKBreveBasicTheme.m; sourceTree = "<group>"; };
+		D3D4B95C184CCB4600F589EB /* BKThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKThemeManager.h; path = Theme/BKThemeManager.h; sourceTree = "<group>"; };
+		D3D4B95D184CCB4600F589EB /* BKThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKThemeManager.m; path = Theme/BKThemeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 		D33EBF4B183A3D1900272403 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D3D4B958184CCA8D00F589EB /* Theme */,
 				D33EBF4C183A3D1900272403 /* Core */,
 				D33EBF51183A3D1900272403 /* View Controllers */,
 				D33EBF5C183A3D1900272403 /* Views */,
@@ -224,6 +232,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D3D4B958184CCA8D00F589EB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4B959184CCB0600F589EB /* BKTheme.h */,
+				D3D4B95A184CCB4600F589EB /* BKBreveBasicTheme.h */,
+				D3D4B95B184CCB4600F589EB /* BKBreveBasicTheme.m */,
+				D3D4B95C184CCB4600F589EB /* BKThemeManager.h */,
+				D3D4B95D184CCB4600F589EB /* BKThemeManager.m */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,9 +346,11 @@
 				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
 				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
+				D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */,
 				D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */,
 				D33EBF70183A3D1900272403 /* main.m in Sources */,
 				D33EBF6A183A3D1900272403 /* BKBreveMainViewController.m in Sources */,
+				D3D4B95F184CCB4600F589EB /* BKThemeManager.m in Sources */,
 				D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */,
 				D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */,
 				D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */,
