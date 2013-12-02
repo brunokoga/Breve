@@ -32,6 +32,7 @@
 		D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B95B184CCB4600F589EB /* BKBreveBasicTheme.m */; };
 		D3D4B95F184CCB4600F589EB /* BKThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B95D184CCB4600F589EB /* BKThemeManager.m */; };
 		D3D4B963184CCF3200F589EB /* BKBreveThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B962184CCF3200F589EB /* BKBreveThemes.m */; };
+		D3D4B966184CD6E000F589EB /* BKBreveDarkTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4B965184CD6E000F589EB /* BKBreveDarkTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		D3D4B95D184CCB4600F589EB /* BKThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKThemeManager.m; path = Theme/BKThemeManager.m; sourceTree = "<group>"; };
 		D3D4B961184CCF3200F589EB /* BKBreveThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveThemes.h; path = Theme/BKBreveThemes.h; sourceTree = "<group>"; };
 		D3D4B962184CCF3200F589EB /* BKBreveThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveThemes.m; path = Theme/BKBreveThemes.m; sourceTree = "<group>"; };
+		D3D4B964184CD6E000F589EB /* BKBreveDarkTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveDarkTheme.h; path = Theme/BKBreveDarkTheme.h; sourceTree = "<group>"; };
+		D3D4B965184CD6E000F589EB /* BKBreveDarkTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveDarkTheme.m; path = Theme/BKBreveDarkTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +248,8 @@
 				D3D4B95D184CCB4600F589EB /* BKThemeManager.m */,
 				D3D4B961184CCF3200F589EB /* BKBreveThemes.h */,
 				D3D4B962184CCF3200F589EB /* BKBreveThemes.m */,
+				D3D4B964184CD6E000F589EB /* BKBreveDarkTheme.h */,
+				D3D4B965184CD6E000F589EB /* BKBreveDarkTheme.m */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 				D33EBF69183A3D1900272403 /* BKBreveBaseViewController.m in Sources */,
 				D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */,
 				D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */,
+				D3D4B966184CD6E000F589EB /* BKBreveDarkTheme.m in Sources */,
 				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
 				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
