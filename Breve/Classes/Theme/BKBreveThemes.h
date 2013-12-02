@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BKTheme.h"
 
-typedef enum BKBreveThemes
+typedef enum BKBreveTheme
 {
     BKBreveThemeBasic = 0,
     BKBreveThemeDark = 1

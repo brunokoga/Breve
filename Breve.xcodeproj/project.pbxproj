@@ -244,12 +244,12 @@
 				D3D4B959184CCB0600F589EB /* BKTheme.h */,
 				D3D4B95A184CCB4600F589EB /* BKBreveBasicTheme.h */,
 				D3D4B95B184CCB4600F589EB /* BKBreveBasicTheme.m */,
+				D3D4B964184CD6E000F589EB /* BKBreveDarkTheme.h */,
+				D3D4B965184CD6E000F589EB /* BKBreveDarkTheme.m */,
 				D3D4B95C184CCB4600F589EB /* BKThemeManager.h */,
 				D3D4B95D184CCB4600F589EB /* BKThemeManager.m */,
 				D3D4B961184CCF3200F589EB /* BKBreveThemes.h */,
 				D3D4B962184CCF3200F589EB /* BKBreveThemes.m */,
-				D3D4B964184CD6E000F589EB /* BKBreveDarkTheme.h */,
-				D3D4B965184CD6E000F589EB /* BKBreveDarkTheme.m */,
 			);
 			name = Theme;
 			sourceTree = "<group>";

@@ -18,6 +18,10 @@
 
 @end
 
+#define kSettingsTableViewSectionGeneral 0
+#define kSettingsTableViewSectionTheme 1
+#define kSettingsTableViewSectionAbout 2
+
 @implementation BKBreveSettingsViewController
 
 - (void)viewDidLoad
@@ -33,9 +37,14 @@
     self.autocorrectionSwitch.on = [settings autocorrection];
     self.spellCheckingSwitch.on = [settings spellChecking];
     self.accentsAndDiacriticsSwitch.on = [settings removeAccentsAndDiacritics];
-    
-    
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    BKBreveSettings *settings = [BKBreveSettings generalSettings];
+    [self selectThemeAtIndexPath:[NSIndexPath indexPathForRow:[settings theme]
+                                                   inSection:kSettingsTableViewSectionTheme]];
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
@@ -73,7 +82,7 @@
     {
         if (cell != selectedCell)
         {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.accessoryType = UITableViewCellAccessoryNone;
         }
         else
         {
@@ -82,13 +91,12 @@
     }
     BKBreveSettings *settings = [BKBreveSettings generalSettings];
     [settings setTheme:indexPath.row];
+
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDelegate
 
-#define kSettingsTableViewSectionGeneral 0
-#define kSettingsTableViewSectionTheme 1
-#define kSettingsTableViewSectionAbout 2
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {

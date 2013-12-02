@@ -7,8 +7,9 @@
 //
 
 #import "BKBreveThemes.h"
-#import "BKBreveBasicTheme.h"
 #import "BKThemeManager.h"
+#import "BKBreveBasicTheme.h"
+#import "BKBreveDarkTheme.h"
 
 @implementation BKBreveThemes
 
@@ -19,6 +20,9 @@
     switch (theme) {
         case BKBreveThemeBasic:
             themeObject = [BKBreveBasicTheme new];
+            break;
+        case BKBreveThemeDark:
+            themeObject = [BKBreveDarkTheme new];
             break;
             
         default:

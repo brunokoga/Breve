@@ -62,6 +62,9 @@
     self.textView.autocorrectionType = [settings autocorrection] ? UITextAutocorrectionTypeYes: UITextAutocorrectionTypeNo;
     
     self.textView.spellCheckingType = [settings spellChecking] ? UITextSpellCheckingTypeYes : UITextSpellCheckingTypeNo;
+    
+    id<BKTheme> theme = [BKThemeManager theme];
+    self.view.backgroundColor = [theme backgroundColor];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

@@ -33,6 +33,7 @@
 + (void)setTheme:(id<BKTheme>)theme
 {
     [self sharedInstance].theme = theme;
+    [theme applyAppearance];
 }
 
 

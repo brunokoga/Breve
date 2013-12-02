@@ -10,16 +10,10 @@
 
 @protocol BKTheme <NSObject>
 
-- (UIFont *)regularFontWithSize:(CGFloat)size;
-- (UIFont *)lightFontWithSize:(CGFloat)size;
+- (UIColor *)backgroundColor;
+- (UIColor *)foregroundColor;
+- (UIColor *)tintColor;
 
-
-- (UIColor *)primaryColorLight;
-- (UIColor *)primaryColorDark;
-- (UIColor *)secondaryColor;
-- (UIColor *)darkColor;
-- (UIColor *)lightGrayColor;
-
-
+- (void)applyAppearance;
 
 @end
