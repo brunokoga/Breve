@@ -11,7 +11,8 @@
 
 typedef enum BKBreveThemes
 {
-    BKBreveThemeBasic = 0
+    BKBreveThemeBasic = 0,
+    BKBreveThemeDark = 1
     
 } BKBreveTheme;
 

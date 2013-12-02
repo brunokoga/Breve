@@ -80,6 +80,8 @@
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
     }
+    BKBreveSettings *settings = [BKBreveSettings generalSettings];
+    [settings setTheme:indexPath.row];
 }
 
 #pragma mark - UITableViewDelegate
