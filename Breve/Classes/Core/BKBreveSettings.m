@@ -23,16 +23,22 @@
 
 - (void)loadSettings
 {
-    [self enableColorMode];
 }
 
-- (void)enableColorMode
+#pragma mark - Helpers
+
+- (void)setInteger:(NSInteger)value forKey:(NSString *)key
 {
-    _isColorModeOn = YES;
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    [standardUserDefaults setInteger:value
+                           forKey:key];
+    [standardUserDefaults synchronize];
 }
-- (void)disableColorMode
+
+- (NSInteger)integerForKey:(NSString *)key
 {
-    _isColorModeOn = NO;
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    return [standardUserDefaults integerForKey:key];
 }
 
 - (void)setBOOL:(BOOL)boolValue forKey:(NSString *)key
@@ -95,6 +101,24 @@ static NSString * const kBreveSettingsRemoveAccentsAndDiacritics = @"kBreveSetti
 - (void)setRemoveAccentsAndDiacritics:(BOOL)removeAccentsAndDiacritics
 {
     [self setBOOL:removeAccentsAndDiacritics forKey:kBreveSettingsRemoveAccentsAndDiacritics];
+}
+
+static NSString * const kBreveSettingsTheme = @"kBreveSettingsTheme";
+
+- (BKBreveTheme)theme
+{
+    return [self integerForKey:kBreveSettingsTheme];
+}
+
+- (void)setTheme:(BKBreveTheme)theme
+{
+    [self setInteger:theme forKey:kBreveSettingsTheme];
+    [self applyTheme];
+}
+
+- (void)applyTheme
+{
+    [BKBreveThemes applyTheme:[self theme]];
 }
 
 @end

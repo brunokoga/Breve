@@ -7,7 +7,6 @@
 //
 
 #import "BKThemeManager.h"
-#import "BKBreveBasicTheme.h"
 
 @interface BKThemeManager ()
 
@@ -22,7 +21,6 @@
     static BKThemeManager *sharedInstance;
     dispatch_once(&once, ^{
         sharedInstance = [[self alloc] init];
-        sharedInstance.theme = [BKBreveBasicTheme new];
     });
     return sharedInstance;
 }

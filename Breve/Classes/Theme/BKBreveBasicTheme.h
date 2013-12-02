@@ -11,6 +11,4 @@
 
 @interface BKBreveBasicTheme : NSObject <BKTheme>
 
-
-
 @end

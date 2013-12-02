@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BKTheme.h"
+#import "BKBreveThemes.h"
 
 @interface BKThemeManager : NSObject
 

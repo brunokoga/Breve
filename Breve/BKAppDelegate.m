@@ -7,11 +7,13 @@
 //
 
 #import "BKAppDelegate.h"
+#import "BKBreveSettings.h"
 
 @implementation BKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[BKBreveSettings generalSettings] applyTheme];
     return YES;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BKBreveThemes.h"
 
 @interface BKBreveSettings : NSObject
 
@@ -14,14 +15,9 @@
 @property (nonatomic) BOOL autocapitalization;
 @property (nonatomic) BOOL spellChecking;
 @property (nonatomic) BOOL removeAccentsAndDiacritics;
-
-@property (nonatomic, readonly) BOOL isColorModeOn;
+@property (nonatomic) BKBreveTheme theme;
 
 + (instancetype)generalSettings;
-
-//TODO: implement
-- (void)enableColorMode;
-- (void)disableColorMode;
-
+- (void)applyTheme;
 
 @end

@@ -10,19 +10,19 @@
 
 @implementation BKBreveBasicTheme
 
-static NSString * const kPeopleBasicThemeRegularFont = @"Roboto-Regular";
-static NSString * const kPeopleBasicThemeLightFont = @"Roboto-Light";
+static NSString * const kBKBreveBasicThemeRegularFont = @"Roboto-Regular";
+static NSString * const kBKBreveBasicThemeLightFont = @"Roboto-Light";
 
 
 - (UIFont *)regularFontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:kPeopleBasicThemeRegularFont
+    return [UIFont fontWithName:kBKBreveBasicThemeRegularFont
                            size:size];
 }
 
 - (UIFont *)lightFontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:kPeopleBasicThemeLightFont
+    return [UIFont fontWithName:kBKBreveBasicThemeLightFont
                               size:size];
     
 }
