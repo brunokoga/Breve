@@ -10,7 +10,12 @@
 
 @protocol BKTheme <NSObject>
 
+@optional
+
+- (UIStatusBarStyle)statusBarStyle;
+
 - (UIColor *)backgroundColor;
+- (UIColor *)backgroundAlternativeColor;
 - (UIColor *)foregroundColor;
 - (UIColor *)tintColor;
 

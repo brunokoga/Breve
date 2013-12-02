@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BKTheme.h"
+#import "BKBreveThemeAbstractClass.h"
 
-@interface BKBreveBasicTheme : NSObject <BKTheme>
+@interface BKBreveBasicTheme : BKBreveThemeAbstractClass
 
 @end

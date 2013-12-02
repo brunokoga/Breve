@@ -10,6 +10,11 @@
 
 @implementation BKBreveDarkTheme
 
+- (UIStatusBarStyle)statusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (UIColor *)backgroundColor
 {
     return [UIColor blackColor];
@@ -25,11 +30,9 @@
     return [UIColor redColor];
 }
 
-- (void)applyAppearance
+- (UIColor *)backgroundAlternativeColor
 {
-    [[UISwitch appearance] setOnTintColor:[self tintColor]];
-    [[UITableView appearance] setTintColor:[self tintColor]];
-    [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
-    [[UITextView appearance] setTextColor:[self foregroundColor]];
+    return [UIColor darkGrayColor];
 }
+
 @end

@@ -10,6 +10,11 @@
 
 @implementation BKBreveBasicTheme
 
+- (UIStatusBarStyle)statusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
 - (UIColor *)backgroundColor
 {
     return [UIColor whiteColor];
@@ -22,15 +27,12 @@
 
 - (UIColor *)tintColor
 {
-    return [UIColor blueColor];
+    return [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
 }
 
-- (void)applyAppearance
+- (UIColor *)backgroundAlternativeColor
 {
-    [[UISwitch appearance] setOnTintColor:[self tintColor]];
-    [[UITableView appearance] setTintColor:[self tintColor]];
-    [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
-    [[UITextView appearance] setTextColor:[self foregroundColor]];
+    return [UIColor whiteColor];
 }
 
 @end

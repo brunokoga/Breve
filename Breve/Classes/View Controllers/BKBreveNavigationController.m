@@ -14,4 +14,8 @@
 
 @implementation BKBreveNavigationController
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return [[BKThemeManager theme] statusBarStyle];
+}
 @end

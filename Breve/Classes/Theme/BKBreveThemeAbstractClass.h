@@ -1,5 +1,5 @@
 //
-//  BKBreveDarkTheme.h
+//  BKBreveThemeAbstractClass.h
 //  Breve
 //
 //  Created by Bruno Koga on 12/2/13.
@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BKBreveThemeAbstractClass.h"
+#import "BKTheme.h"
 
-@interface BKBreveDarkTheme : BKBreveThemeAbstractClass
+@interface BKBreveThemeAbstractClass : NSObject <BKTheme>
+
+- (void)applyAppearance;
 
 @end

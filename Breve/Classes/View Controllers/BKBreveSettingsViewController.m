@@ -92,7 +92,17 @@
     BKBreveSettings *settings = [BKBreveSettings generalSettings];
     [settings setTheme:indexPath.row];
 
+    [self applyTheme];
+}
+
+- (void)applyTheme
+{
+    id<BKTheme> theme = [BKThemeManager theme];
     [self.tableView reloadData];
+    [self.navigationController setNeedsStatusBarAppearanceUpdate];
+    [self.navigationController.navigationBar setBarTintColor:[theme backgroundAlternativeColor]];
+    [self.tableView setBackgroundColor:[theme backgroundColor]];
+    [self.tableView setTintColor:[theme tintColor]];
 }
 
 #pragma mark - UITableViewDelegate

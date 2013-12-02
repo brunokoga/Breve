@@ -1,3 +1,3 @@
 #Release Notes
 
-* Settings option to remove accents and diacritics
+* Introducing Themes! (WIP)
