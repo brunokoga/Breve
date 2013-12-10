@@ -76,4 +76,11 @@
     return [mutableString copy];
 }
 
+- (NSString *)convertString:(NSString *)string
+         fromEffectWithName:(NSString *)fromEffectName
+           toEffectWithName:(NSString *)toEffectName
+{
+    return @"";
+}
+
 @end

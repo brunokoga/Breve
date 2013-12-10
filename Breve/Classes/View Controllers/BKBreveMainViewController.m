@@ -11,6 +11,7 @@
 #import "BKBreveCore.h"
 #import "BKBreveSettings.h"
 #import "NSString+AccentsAndDiacritics.h"
+#import "BKBreveURLSchemeManager.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -51,6 +52,7 @@
                                              selector:@selector(keyboardWillDisappear:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+    
     [self.textView becomeFirstResponder];
 }
 
@@ -85,6 +87,33 @@
 - (void)swipeToClear:(UISwipeGestureRecognizer *)gestureRecognizer
 {
     self.textView.text = @"";
+}
+
+#pragma mark - URL Notifications
+
+- (void)urlNotificationReceived:(NSNotification*)notification
+{
+    
+    NSString *sentence = [notification userInfo][BKBreveURLSentenceUserInfoKey];
+    NSString *fromEffectName = [notification userInfo][BKBreveURLFromEffectUserInfoKey];
+    NSString *toEffectName = [notification userInfo][BKBreveURLToEffectUserInfoKey];
+    [[BKBreveCore sharedInstance] convertString:sentence
+                             fromEffectWithName:fromEffectName
+                               toEffectWithName:toEffectName];
+    
+    [self selectSegmentedControlIndexByEffectName:toEffectName];
+
+    
+}
+
+- (void)selectSegmentedControlIndexByEffectName:(NSString *)effectName
+{
+    NSInteger toIndex = 0;
+    if ([effectName isEqualToString:@"bubs"])
+    {
+        toIndex = 1;
+    }
+    [self.segmentedControl setSelectedSegmentIndex:toIndex];
 }
 
 #pragma mark - Keyboard Notifications

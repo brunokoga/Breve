@@ -15,6 +15,10 @@
 
 + (id)sharedInstance;
 
+- (NSString *)convertString:(NSString *)string
+         fromEffectWithName:(NSString *)fromEffectName
+           toEffectWithName:(NSString *)toEffectName;
+
 - (NSString *)convertFromNormalToBubs:(NSString *)string;
 - (NSString *)convertFromBubsToNormal:(NSString *)string;
 
