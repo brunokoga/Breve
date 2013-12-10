@@ -107,7 +107,7 @@ static NSString * const kBreveSettingsTheme = @"kBreveSettingsTheme";
 
 - (BKBreveTheme)theme
 {
-    return [self integerForKey:kBreveSettingsTheme];
+    return (BKBreveTheme)[self integerForKey:kBreveSettingsTheme];
 }
 
 - (void)setTheme:(BKBreveTheme)theme

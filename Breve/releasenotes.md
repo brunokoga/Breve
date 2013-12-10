@@ -1,3 +1,5 @@
 #Release Notes
 
-* Introducing Themes! (WIP)
+* Adds URL Scheme support: breve://
+* Adds Initial x-callback-url support
+

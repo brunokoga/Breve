@@ -11,11 +11,6 @@
 
 @implementation BKBreveURLSchemeManager
 
-NSString * const BKBreveOpenURLNotification = @"BKBreveOpenURLNotification";
-NSString * const BKBreveURLSentenceUserInfoKey = @"BKBreveURLSentenceUserInfoKey";
-NSString * const BKBreveURLFromEffectUserInfoKey = @"BKBreveURLFromEffectUserInfoKey";
-NSString * const BKBreveURLToEffectUserInfoKey = @"BKBreveURLToEffectUserInfoKey";
-
 + (void)setup
 {
     SBRCallbackParser *parser = [SBRCallbackParser sharedParser];
