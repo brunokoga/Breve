@@ -89,23 +89,6 @@
     self.textView.text = @"";
 }
 
-#pragma mark - URL Notifications
-
-- (void)urlNotificationReceived:(NSNotification*)notification
-{
-    
-    NSString *sentence = [notification userInfo][BKBreveURLSentenceUserInfoKey];
-    NSString *fromEffectName = [notification userInfo][BKBreveURLFromEffectUserInfoKey];
-    NSString *toEffectName = [notification userInfo][BKBreveURLToEffectUserInfoKey];
-    [[BKBreveCore sharedInstance] convertString:sentence
-                             fromEffectWithName:fromEffectName
-                               toEffectWithName:toEffectName];
-    
-    [self selectSegmentedControlIndexByEffectName:toEffectName];
-
-    
-}
-
 - (void)selectSegmentedControlIndexByEffectName:(NSString *)effectName
 {
     NSInteger toIndex = 0;
