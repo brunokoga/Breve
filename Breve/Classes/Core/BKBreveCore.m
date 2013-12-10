@@ -80,7 +80,7 @@
          fromEffectWithName:(NSString *)fromEffectName
            toEffectWithName:(NSString *)toEffectName
 {
-    return @"";
+    return [self convertFromNormalToBubs:string];
 }
 
 @end
