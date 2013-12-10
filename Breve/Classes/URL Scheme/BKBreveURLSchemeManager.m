@@ -7,34 +7,40 @@
 //
 
 #import "BKBreveURLSchemeManager.h"
-#import <SBRXCallbackURLKit/SBRCallbackParser.h>
+#import "BKBreveCore.h"
+#import <InterAppCommunication/IACClient.h>
 
 @implementation BKBreveURLSchemeManager
 
 + (void)setup
 {
-    SBRCallbackParser *parser = [SBRCallbackParser sharedParser];
-    [parser setURLScheme:@"breve"];
+    [IACManager sharedManager].callbackURLScheme = @"breve";
     
-    [parser addHandlerForActionName:@"applyEffect"
-                       handlerBlock:^BOOL(NSDictionary *parameters, NSString *source, SBRCallbackActionHandlerCompletionBlock completion) {
-        NSLog(@"Action triggered with parameters: %@", parameters);
-        
-        // For two-way app communication, When you are ready to trigger the
-        // callbacks provided by the external app, call the completion
-        // block provided. This happens asynchronously for your to determine
-        // when you are ready to make the callback. This callback can be omitted
-        // if the action is not a two-way type action.
-        completion(nil, nil, NO);
-        
-        // YES let's the parser know the action was handled, otherwise return NO
-        return YES;
-    }];
+       [[IACManager sharedManager] handleAction:@"applyEffect"
+                                   withBlock:^(NSDictionary *inputParameters, IACSuccessBlock success, IACFailureBlock failure) {
+                                       if (success) {
+                                           
+                                           
+                                           NSString *string = inputParameters[@"text"];
+                                           NSString *fromEffect = inputParameters[@"fromEffect"];
+                                           NSString *toEffect = inputParameters[@"toEffect"];
+                                           
+                                           BKBreveCore *core = [BKBreveCore sharedInstance];
+                                           
+                                           NSString *convertedString = [core convertString:string
+                                                        fromEffectWithName:fromEffect
+                                                          toEffectWithName:toEffect];
+                           
+                                           NSDictionary *successParameters = @{@"text": convertedString};
+                                           
+                                           success(successParameters, NO);
+                                       }
+                                   }];
 }
 
-+ (void)handleOpenURL:(NSURL *)url
++ (BOOL)handleOpenURL:(NSURL *)url
 {
-    [[SBRCallbackParser sharedParser] handleURL:url];
+    return [[IACManager sharedManager] handleOpenURL:url];
 }
 
 /*

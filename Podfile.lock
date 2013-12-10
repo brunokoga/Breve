@@ -1,10 +1,10 @@
 PODS:
-  - SBRXCallbackURLKit (1.0.0)
+  - InterAppCommunication (1.0)
 
 DEPENDENCIES:
-  - SBRXCallbackURLKit (~> 1.0.0)
+  - InterAppCommunication (~> 1.0)
 
 SPEC CHECKSUMS:
-  SBRXCallbackURLKit: 44af5a9ad3f83f75e3e10247930eab190ab180f6
+  InterAppCommunication: 8b5c768edf16414947f4fae4d15a86cc38ddbf8c
 
-COCOAPODS: 0.27.1
+COCOAPODS: 0.28.0

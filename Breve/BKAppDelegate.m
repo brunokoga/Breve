@@ -22,7 +22,6 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {    
-    [BKBreveURLSchemeManager handleOpenURL:url];
-    return YES;
+    return [BKBreveURLSchemeManager handleOpenURL:url];
 }
 @end

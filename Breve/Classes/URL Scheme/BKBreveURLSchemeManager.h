@@ -16,6 +16,6 @@ NSString * const BKBreveURLToEffectUserInfoKey;
 @interface BKBreveURLSchemeManager : NSObject
 
 + (void)setup;
-+ (void)handleOpenURL:(NSURL *)url;
++ (BOOL)handleOpenURL:(NSURL *)url;
 
 @end
