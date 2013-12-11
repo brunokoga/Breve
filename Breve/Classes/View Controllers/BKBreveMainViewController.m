@@ -31,6 +31,16 @@
     [super viewDidLoad];
     self.textView.font = [UIFont systemFontOfSize:26.0];
     [self setUpGestureRecognizers];
+    [self loadInputAccessoryView];
+}
+
+- (void)loadInputAccessoryView
+{
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BKBreveInputAccessoryView"
+                                                 owner:self
+                                               options:nil];
+    UIView *inputAccessoryView = nib[0];
+    self.textView.inputAccessoryView = inputAccessoryView;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -135,6 +145,7 @@
 #pragma mark - IBActions
 
 - (IBAction)settingsButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"SettingsSegue" sender:self];
 }
 
 - (IBAction)copyButtonPressed:(id)sender {

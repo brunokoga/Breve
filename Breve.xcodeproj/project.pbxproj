@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		387D17288B694B89AFB1554B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CE93BFED84D6FB55B61C9 /* libPods.a */; };
+		D3266E86185887F900F56152 /* BKBreveInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */; };
+		D3266E8818588BF500F56152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3266E8718588BF500F56152 /* Images.xcassets */; };
 		D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF48183A3D1900272403 /* BKAppDelegate.m */; };
 		D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF4E183A3D1900272403 /* BKBreveCore.m */; };
 		D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF50183A3D1900272403 /* BKBreveSettings.m */; };
@@ -17,7 +19,6 @@
 		D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */; };
 		D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */; };
 		D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */; };
-		D33EBF6F183A3D1900272403 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF61183A3D1900272403 /* Images.xcassets */; };
 		D33EBF70183A3D1900272403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF62183A3D1900272403 /* main.m */; };
 		D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */; };
 		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		305CE93BFED84D6FB55B61C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07D12E78604413BE91F97D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKBreveInputAccessoryView.xib; path = Views/BKBreveInputAccessoryView.xib; sourceTree = "<group>"; };
+		D3266E8718588BF500F56152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D33EBF47183A3D1900272403 /* BKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
 		D33EBF48183A3D1900272403 /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		D33EBF49183A3D1900272403 /* Breve-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettingsViewController.m; sourceTree = "<group>"; };
 		D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
 		D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
-		D33EBF61183A3D1900272403 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D33EBF62183A3D1900272403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 		D33EBF46183A3D1900272403 /* Breve */ = {
 			isa = PBXGroup;
 			children = (
-				D33EBF61183A3D1900272403 /* Images.xcassets */,
+				D3266E8718588BF500F56152 /* Images.xcassets */,
 				D33EBF4B183A3D1900272403 /* Classes */,
 				D344120B183A4B680032CC85 /* Supporting Files */,
 				D37CADAA1848D12E00AE3E91 /* Categories */,
@@ -146,6 +148,7 @@
 				D33EBF4C183A3D1900272403 /* Core */,
 				D33EBF51183A3D1900272403 /* View Controllers */,
 				D33EBF5C183A3D1900272403 /* Views */,
+				D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -348,8 +351,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3266E8818588BF500F56152 /* Images.xcassets in Resources */,
+				D3266E86185887F900F56152 /* BKBreveInputAccessoryView.xib in Resources */,
 				D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */,
-				D33EBF6F183A3D1900272403 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

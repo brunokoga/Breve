@@ -40,7 +40,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="58V-N6-nYW">
                             <connections>
                                 <action selector="settingsButtonPressed:" destination="vMU-IH-vsx" id="knY-Zn-Aop"/>
-                                <segue destination="HHA-9x-24T" kind="modal" id="7xA-No-iRY"/>
+                                <segue destination="HHA-9x-24T" kind="modal" identifier="SettingsSegue" id="7xA-No-iRY"/>
                             </connections>
                         </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="s7J-lA-QOB" customClass="BKBubsSegmentedControl">
@@ -73,7 +73,7 @@
         <!--Breve Navigation Controller-->
         <scene sceneID="Qrj-ub-LFo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERJ-Ik-Da9" customClass="BKBreveNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ERJ-Ik-Da9" customClass="BKBreveNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9rL-E7-S5I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
