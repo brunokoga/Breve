@@ -31,7 +31,8 @@
                                                         fromEffectWithName:fromEffect
                                                           toEffectWithName:toEffect];
                            
-                                           NSDictionary *successParameters = @{@"text": convertedString};
+                                           NSDictionary *successParameters = @{@"[[output]]": convertedString};
+                                           
                                            
                                            success(successParameters, NO);
                                        }

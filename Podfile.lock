@@ -2,7 +2,11 @@ PODS:
   - InterAppCommunication (1.0)
 
 DEPENDENCIES:
-  - InterAppCommunication (~> 1.0)
+  - InterAppCommunication (from `git@github.com:brunokoga/InterAppCommunication.git`)
+
+EXTERNAL SOURCES:
+  InterAppCommunication:
+    :git: git@github.com:brunokoga/InterAppCommunication.git
 
 SPEC CHECKSUMS:
   InterAppCommunication: 8b5c768edf16414947f4fae4d15a86cc38ddbf8c
