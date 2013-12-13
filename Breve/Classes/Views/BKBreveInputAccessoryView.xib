@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKBreveMainViewController">
-            <connections>
-                <outlet property="segmentedControl" destination="isd-Mr-IVL" id="Nuw-1k-ekJ"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKBreveMainViewController"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <view contentMode="scaleToFill" id="1" customClass="BKBreveInputAccessoryView">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Xuf-IW-iQB">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuf-IW-iQB">
+                    <rect key="frame" x="0.0" y="0.0" width="427" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
                         <barButtonItem image="19-gear" id="CRU-5l-Aah">
@@ -30,23 +26,21 @@
                                 <action selector="copyButtonPressed:" destination="-1" id="sld-Iw-WeB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" id="EtI-ut-c40">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="isd-Mr-IVL" customClass="BKBubsSegmentedControl">
-                                <rect key="frame" x="85" y="7" width="133" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Normal"/>
-                                    <segment title="Ⓑⓤⓑⓢ"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedControlValueChanged:" destination="-1" eventType="valueChanged" id="mTZ-vS-RY9"/>
-                                </connections>
-                            </segmentedControl>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="hBf-tc-C4H"/>
+                        <barButtonItem title="Effects" id="xP7-EL-rot">
+                            <connections>
+                                <action selector="effectsButtonPressed:" destination="-1" id="xeh-bS-Ix1"/>
+                            </connections>
                         </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xuf-IW-iQB" firstAttribute="top" secondItem="1" secondAttribute="top" id="7WR-uH-RMD"/>
+                <constraint firstAttribute="trailing" secondItem="Xuf-IW-iQB" secondAttribute="trailing" id="l5a-Q9-pMI"/>
+                <constraint firstItem="Xuf-IW-iQB" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wzI-yI-frM"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>

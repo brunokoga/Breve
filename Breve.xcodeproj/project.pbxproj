@@ -24,6 +24,9 @@
 		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
 		D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */; };
 		D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */; };
+		D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */; };
+		D36E91A3185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */; };
+		D36E91A5185B819100C2B6A6 /* BKBreveEffectsInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */; };
 		D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */; };
 		D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADAC1848E18000AE3E91 /* BKBreveVersionNumber.m */; };
 		D38A5E5D183A3EAB00C015F1 /* BreveTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */; };
@@ -52,7 +55,7 @@
 /* Begin PBXFileReference section */
 		305CE93BFED84D6FB55B61C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07D12E78604413BE91F97D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKBreveInputAccessoryView.xib; path = Views/BKBreveInputAccessoryView.xib; sourceTree = "<group>"; };
+		D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKBreveInputAccessoryView.xib; sourceTree = "<group>"; };
 		D3266E8718588BF500F56152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D33EBF47183A3D1900272403 /* BKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
 		D33EBF48183A3D1900272403 /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,11 @@
 		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
 		D3442B2F18576A6F00342E15 /* BKBreveURLSchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveURLSchemeManager.h; path = "URL Scheme/BKBreveURLSchemeManager.h"; sourceTree = "<group>"; };
 		D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveURLSchemeManager.m; path = "URL Scheme/BKBreveURLSchemeManager.m"; sourceTree = "<group>"; };
+		D36E919E185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveInputAccessoryView.h; sourceTree = "<group>"; };
+		D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveInputAccessoryView.m; sourceTree = "<group>"; };
+		D36E91A1185B7FFF00C2B6A6 /* BKBreveEffectsInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveEffectsInputView.h; sourceTree = "<group>"; };
+		D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectsInputView.m; sourceTree = "<group>"; };
+		D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKBreveEffectsInputView.xib; sourceTree = "<group>"; };
 		D37CADA71848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+AccentsAndDiacritics.h"; path = "Classes/Categories/NSString+AccentsAndDiacritics.h"; sourceTree = "<group>"; };
 		D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+AccentsAndDiacritics.m"; path = "Classes/Categories/NSString+AccentsAndDiacritics.m"; sourceTree = "<group>"; };
 		D37CADAB1848E18000AE3E91 /* BKBreveVersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveVersionNumber.h; sourceTree = "<group>"; };
@@ -148,7 +156,6 @@
 				D33EBF4C183A3D1900272403 /* Core */,
 				D33EBF51183A3D1900272403 /* View Controllers */,
 				D33EBF5C183A3D1900272403 /* Views */,
-				D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -186,8 +193,14 @@
 		D33EBF5C183A3D1900272403 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */,
+				D36E919E185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.h */,
+				D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */,
 				D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */,
 				D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */,
+				D36E91A1185B7FFF00C2B6A6 /* BKBreveEffectsInputView.h */,
+				D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */,
+				D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36E91A5185B819100C2B6A6 /* BKBreveEffectsInputView.xib in Resources */,
 				D3266E8818588BF500F56152 /* Images.xcassets in Resources */,
 				D3266E86185887F900F56152 /* BKBreveInputAccessoryView.xib in Resources */,
 				D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -409,8 +423,10 @@
 				D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */,
 				D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */,
 				D3D4B966184CD6E000F589EB /* BKBreveDarkTheme.m in Sources */,
+				D36E91A3185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m in Sources */,
 				D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */,
 				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
+				D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
 				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
 				D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */,

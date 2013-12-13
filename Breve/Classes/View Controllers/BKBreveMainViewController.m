@@ -12,6 +12,7 @@
 #import "BKBreveSettings.h"
 #import "NSString+AccentsAndDiacritics.h"
 #import "BKBreveURLSchemeManager.h"
+#import "BKBreveEffectsInputView.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
 @property (nonatomic) NSRange cursorRange;
+@property (strong, nonatomic) BKBreveEffectsInputView *effectsInputView;
 
 @end
 
@@ -33,6 +35,7 @@
     [self setUpGestureRecognizers];
     [self loadInputAccessoryView];
 }
+
 
 - (void)loadInputAccessoryView
 {
@@ -142,7 +145,47 @@
             toHeight:CGRectZero.size.height];
 }
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self adjustInputAccessoryViewToOrientation:toInterfaceOrientation];
+}
+
+- (void)adjustInputAccessoryViewToOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    
+    CGFloat height = 216.0;
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
+    {
+        height = 162.0;
+        width = [UIScreen mainScreen].bounds.size.height;
+        
+    }
+    self.textView.inputView.frame = CGRectMake(0, 0, width, height);
+}
+
 #pragma mark - IBActions
+
+- (IBAction)effectsButtonPressed:(id)sender
+{
+    if (self.textView.inputView)
+    {
+        self.textView.inputView = nil;
+    }
+    else
+    {
+        if (!self.effectsInputView)
+        {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BKBreveEffectsInputView"
+                                                         owner:self
+                                                       options:nil];
+            self.effectsInputView = nib[0];
+        }
+        self.textView.inputView = self.effectsInputView;
+        [self adjustInputAccessoryViewToOrientation:[self interfaceOrientation]];
+    }
+    [self.textView reloadInputViews];
+}
 
 - (IBAction)settingsButtonPressed:(id)sender {
     [self performSegueWithIdentifier:@"SettingsSegue" sender:self];
