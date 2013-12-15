@@ -10,4 +10,6 @@
 
 @interface BKBreveEffect : NSObject
 
+@property (strong, nonatomic, readonly) NSArray *lettersArray;
+
 @end

@@ -170,12 +170,12 @@
 				D32980BC185E554A00E1B12D /* BKBreveEffectNormal.m */,
 				D32980BE185E555C00E1B12D /* BKBreveEffectBubs.h */,
 				D32980BF185E555C00E1B12D /* BKBreveEffectBubs.m */,
+				D32980B8185E54F000E1B12D /* BKBreveEffect.h */,
+				D32980B9185E54F000E1B12D /* BKBreveEffect.m */,
 				D3D4B958184CCA8D00F589EB /* Theme */,
 				D33EBF4C183A3D1900272403 /* Core */,
 				D33EBF51183A3D1900272403 /* View Controllers */,
 				D33EBF5C183A3D1900272403 /* Views */,
-				D32980B8185E54F000E1B12D /* BKBreveEffect.h */,
-				D32980B9185E54F000E1B12D /* BKBreveEffect.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
