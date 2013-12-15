@@ -13,10 +13,10 @@
 #import "NSString+AccentsAndDiacritics.h"
 #import "BKBreveURLSchemeManager.h"
 #import "BKBreveEffectsInputView.h"
+#import "BKBreveEffectManager.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (copy, nonatomic) NSString *regularText;
 @property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
 @property (nonatomic) NSRange cursorRange;
@@ -35,7 +35,6 @@
     [self setUpGestureRecognizers];
     [self loadInputAccessoryView];
 }
-
 
 - (void)loadInputAccessoryView
 {
@@ -199,11 +198,11 @@
     BKBubsSegmentedControl *segmentedControl = sender;
     switch (segmentedControl.selectedSegmentIndex) {
         case BKBubsSegmentedControlIndexNormal:
-            self.textView.text = self.regularText;
+            self.textView.text = [[BKBreveEffectManager sharedManager] normalText];
             break;
         case BKBubsSegmentedControlIndexBubs:
         {
-            self.regularText = self.textView.text;
+            [[BKBreveEffectManager sharedManager] setNormalText:self.textView.text];
             NSString *textToBeConverted = self.textView.text;
             BKBreveSettings *settings = [BKBreveSettings generalSettings];
             if ([settings removeAccentsAndDiacritics])
@@ -247,8 +246,9 @@
     NSUInteger location = range.location + [text length];
     NSUInteger length = 0;
     self.cursorRange = NSMakeRange(location, length);
-    //Fixes regular text
-    self.regularText = [self.regularText stringByReplacingCharactersInRange:range withString:text];
+    //fixes normal text
+    NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
+    [[BKBreveEffectManager sharedManager] setNormalText:[normalText stringByReplacingCharactersInRange:range withString:text]];
     return YES;
 }
 
