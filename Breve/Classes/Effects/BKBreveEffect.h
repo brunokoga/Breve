@@ -11,5 +11,6 @@
 @interface BKBreveEffect : NSObject
 
 @property (strong, nonatomic, readonly) NSArray *lettersArray;
+@property (strong, nonatomic, readonly) NSString *effectName;
 
 @end

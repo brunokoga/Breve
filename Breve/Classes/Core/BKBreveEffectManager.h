@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BKBreveEffect.h"
+#import "BKBreveEffectNormal.h" //this is here for initialization's sake. Does it make sense?
 
 @interface BKBreveEffectManager : NSObject
 @property (strong, nonatomic) BKBreveEffect *effect;

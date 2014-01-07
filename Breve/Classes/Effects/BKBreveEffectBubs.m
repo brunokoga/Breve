@@ -20,4 +20,9 @@
     return _lettersArray;
 }
 
+- (NSString *)effectName
+{
+    return @"Bubs";
+}
+
 @end

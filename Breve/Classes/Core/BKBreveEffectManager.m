@@ -14,9 +14,11 @@
 + (id)sharedManager
 {
     static dispatch_once_t once;
-    static id sharedManager;
+    static BKBreveEffectManager *sharedManager;
     dispatch_once(&once, ^{
         sharedManager = [[self alloc] init];
+        sharedManager.effect = [BKBreveEffectNormal new];
+        sharedManager.normalText = @"";
     });
     return sharedManager;
 }
