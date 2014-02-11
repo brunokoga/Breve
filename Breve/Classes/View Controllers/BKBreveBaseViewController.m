@@ -7,11 +7,19 @@
 //
 
 #import "BKBreveBaseViewController.h"
+#import "BKThemeManager.h"
 
 @interface BKBreveBaseViewController ()
 
 @end
 
 @implementation BKBreveBaseViewController
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+  id<BKTheme> theme = [BKThemeManager theme];
+  return [theme statusBarStyle];
+  
+}
 
 @end

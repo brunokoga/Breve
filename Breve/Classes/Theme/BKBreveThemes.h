@@ -11,9 +11,10 @@
 
 typedef enum BKBreveTheme
 {
-    BKBreveThemeBasic = 0,
-    BKBreveThemeDark = 1
-    
+  BKBreveThemeBasic = 0,
+  BKBreveThemeDark = 1,
+  BKBreveThemePowerGirl = 2
+  
 } BKBreveTheme;
 
 @interface BKBreveThemes : NSObject

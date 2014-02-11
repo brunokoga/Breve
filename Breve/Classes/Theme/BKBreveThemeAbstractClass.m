@@ -12,14 +12,19 @@
 
 - (void)applyAppearance
 {
-    [[UISwitch appearance] setOnTintColor:[self tintColor]];
-    [[UITableView appearance] setTintColor:[self tintColor]];
-    [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
-    [[UITextView appearance] setTextColor:[self foregroundColor]];
-    [[UINavigationBar appearance] setBarTintColor:[self backgroundAlternativeColor]];
-    [[UITableViewCell appearance] setBackgroundColor:[self backgroundAlternativeColor]];
-    [[UILabel appearance] setTextColor:[self foregroundColor]];
-    [[UITableView appearance] setBackgroundColor:[self backgroundColor]];
+  [[UISwitch appearance] setOnTintColor:[self tintColor]];
+  [[UITableView appearance] setTintColor:[self tintColor]];
+  [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
+  [[UITextView appearance] setTextColor:[self foregroundColor]];
+  [[UINavigationBar appearance] setBarTintColor:[self backgroundAlternativeColor]];
+  [[UITableViewCell appearance] setBackgroundColor:[self backgroundAlternativeColor]];
+  [[UILabel appearance] setTextColor:[self foregroundColor]];
+  [[UITableView appearance] setBackgroundColor:[self backgroundColor]];
+  [[UIButton appearance] setTintColor:[self tintColor]];
+  [[UIBarButtonItem appearance] setTintColor:[self tintColor]];
+  [[UINavigationBar appearance] setTintColor:[self tintColor]];
+  [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [self tintColor]}];
+  [[UISegmentedControl appearance] setTintColor:[self tintColor]];
 }
 
 @end

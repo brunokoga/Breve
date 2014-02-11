@@ -33,7 +33,7 @@
     [super viewDidLoad];
     self.textView.font = [UIFont systemFontOfSize:26.0];
     [self setUpGestureRecognizers];
-    [self loadInputAccessoryView];
+//    [self loadInputAccessoryView];
 }
 
 - (void)loadInputAccessoryView
@@ -70,15 +70,16 @@
 
 - (void)applySettings
 {
-    BKBreveSettings *settings = [BKBreveSettings generalSettings];
-    self.textView.autocapitalizationType = [settings autocapitalization] ? UITextAutocapitalizationTypeSentences : UITextAutocapitalizationTypeNone;
-    
-    self.textView.autocorrectionType = [settings autocorrection] ? UITextAutocorrectionTypeYes: UITextAutocorrectionTypeNo;
-    
-    self.textView.spellCheckingType = [settings spellChecking] ? UITextSpellCheckingTypeYes : UITextSpellCheckingTypeNo;
-    
-    id<BKTheme> theme = [BKThemeManager theme];
-    self.view.backgroundColor = [theme backgroundColor];
+  BKBreveSettings *settings = [BKBreveSettings generalSettings];
+  self.textView.autocapitalizationType = [settings autocapitalization] ? UITextAutocapitalizationTypeSentences : UITextAutocapitalizationTypeNone;
+  
+  self.textView.autocorrectionType = [settings autocorrection] ? UITextAutocorrectionTypeYes: UITextAutocorrectionTypeNo;
+  
+  self.textView.spellCheckingType = [settings spellChecking] ? UITextSpellCheckingTypeYes : UITextSpellCheckingTypeNo;
+  
+  id<BKTheme> theme = [BKThemeManager theme];
+  self.view.backgroundColor = [theme backgroundColor];
+  [self loadInputAccessoryView];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

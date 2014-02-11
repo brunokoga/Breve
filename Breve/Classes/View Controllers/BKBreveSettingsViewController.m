@@ -97,12 +97,15 @@
 
 - (void)applyTheme
 {
-    id<BKTheme> theme = [BKThemeManager theme];
-    [self.tableView reloadData];
-    [self.navigationController setNeedsStatusBarAppearanceUpdate];
-    [self.navigationController.navigationBar setBarTintColor:[theme backgroundAlternativeColor]];
-    [self.tableView setBackgroundColor:[theme backgroundColor]];
-    [self.tableView setTintColor:[theme tintColor]];
+  id<BKTheme> theme = [BKThemeManager theme];
+  [self.tableView reloadData];
+  [self.navigationController setNeedsStatusBarAppearanceUpdate];
+  [self.navigationController.navigationBar setBarTintColor:[theme backgroundAlternativeColor]];
+  [self.navigationController.navigationBar setTintColor:[theme tintColor]];
+  [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [theme tintColor]}];
+  
+  [self.tableView setBackgroundColor:[theme backgroundColor]];
+  [self.tableView setTintColor:[theme tintColor]];
 }
 
 #pragma mark - UITableViewDelegate
