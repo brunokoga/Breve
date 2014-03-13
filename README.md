@@ -1,4 +1,6 @@
-Bubs
+Breve Text Effects
 ====
 
-iBubs: Bubs for iOS
+Breve Text Effects for iOS
+
+Ⓑⓡⓔⓥⓔ Ⓣⓔⓧⓣ Ⓔⓕⓕⓔⓣⓢ ⓕⓞⓡ ⓘⓄⓈ
