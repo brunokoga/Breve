@@ -14,6 +14,7 @@
 #import "BKBreveURLSchemeManager.h"
 #import "BKBreveEffectsInputView.h"
 #import "BKBreveEffectManager.h"
+#import "BKBreveInputAccessoryView.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -38,11 +39,23 @@
 
 - (void)loadInputAccessoryView
 {
+  //TODO: move everything to the view - remove from controller!
   NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BKBreveInputAccessoryView"
                                                owner:self
                                              options:nil];
-  UIView *inputAccessoryView = nib[0];
+  BKBreveInputAccessoryView *inputAccessoryView = nib[0];
+  NSString *newTitle;
+  newTitle = NSLocalizedString(@"Effects", @"Effects title on main toolbar");
+  if (self.textView.inputView)
+  {
+    newTitle = NSLocalizedString(@"Text", @"Effects title on main toolbar");
+  }
+  [inputAccessoryView.textOrEffectsButton setTitle:newTitle];
+  id<BKTheme> theme = [BKThemeManager theme];
+  [inputAccessoryView.textOrEffectsButton setTitleTextAttributes:@{NSForegroundColorAttributeName : [theme tintColor]}
+                                                        forState:UIControlStateNormal];
   self.textView.inputAccessoryView = inputAccessoryView;
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -170,9 +183,12 @@
 
 - (IBAction)effectsButtonPressed:(id)sender
 {
+  NSString *newTitle;
+  newTitle = NSLocalizedString(@"Text", @"Effects title on main toolbar");
   if (self.textView.inputView)
   {
     self.textView.inputView = nil;
+    newTitle = NSLocalizedString(@"Effects", @"Effects title on main toolbar");
   }
   else
   {
@@ -189,6 +205,9 @@
     [self adjustInputAccessoryViewToOrientation:[self interfaceOrientation]];
   }
   [self.textView reloadInputViews];
+  BKBreveInputAccessoryView *accessoryView = (BKBreveInputAccessoryView *)self.textView.inputAccessoryView;
+  [accessoryView.textOrEffectsButton setTitle:newTitle];
+
 }
 
 - (IBAction)settingsButtonPressed:(id)sender {

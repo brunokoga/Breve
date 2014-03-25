@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BKBreveInputAccessoryView : UIView
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *textOrEffectsButton;
 
 @end

@@ -42,6 +42,9 @@
                 <constraint firstItem="Xuf-IW-iQB" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wzI-yI-frM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textOrEffectsButton" destination="xP7-EL-rot" id="0lm-jb-Wzl"/>
+            </connections>
         </view>
     </objects>
     <resources>
