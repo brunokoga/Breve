@@ -10,7 +10,6 @@
 
 @implementation BKBreveEffectManager
 
-
 + (id)sharedManager
 {
     static dispatch_once_t once;

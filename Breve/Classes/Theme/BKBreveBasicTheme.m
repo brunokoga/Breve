@@ -32,7 +32,14 @@
 
 - (UIColor *)backgroundAlternativeColor
 {
-    return [UIColor whiteColor];
+  return [UIColor colorWithRed:233.0f/255.0f
+                         green:233.0f/255.0f
+                          blue:233.0f/255.0f
+                         alpha:1.0f];
 }
 
+- (UIKeyboardAppearance)keyboardAppearance
+{
+  return UIKeyboardAppearanceLight;
+}
 @end

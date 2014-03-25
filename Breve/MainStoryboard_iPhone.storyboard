@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ERJ-Ik-Da9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ERJ-Ik-Da9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Breve Main View Controller-->
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert"/>
                                 <connections>
                                     <outlet property="delegate" destination="vMU-IH-vsx" id="d5j-ks-rJA"/>
                                 </connections>
@@ -338,6 +338,7 @@
                         <outlet property="accentsAndDiacriticsSwitch" destination="uLX-Cf-HCP" id="MLw-fF-SmF"/>
                         <outlet property="autocapitalizationSwitch" destination="Hqw-Qi-oH8" id="w5q-Dz-uKI"/>
                         <outlet property="autocorrectionSwitch" destination="7vV-gR-AXo" id="bTZ-0o-Kr1"/>
+                        <outlet property="doneBarButtonItem" destination="EOk-QI-XAw" id="NyT-ne-2d8"/>
                         <outlet property="spellCheckingSwitch" destination="Uya-sI-e1X" id="Dp1-7i-i06"/>
                         <outletCollection property="themeTableViewCells" destination="KSe-vE-PN7" id="Eb5-yO-oXZ"/>
                         <outletCollection property="themeTableViewCells" destination="3Ee-ft-4UX" id="yOr-Ur-nQq"/>

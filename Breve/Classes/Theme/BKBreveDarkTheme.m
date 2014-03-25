@@ -17,22 +17,35 @@
 
 - (UIColor *)backgroundColor
 {
-    return [UIColor blackColor];
+    return [UIColor colorWithRed:51.0f/255.0f
+                           green:51.0f/255.0f
+                            blue:51.0f/255.0f
+                           alpha:1.0f];
 }
 
 - (UIColor *)foregroundColor
 {
-    return [UIColor lightGrayColor];
+  return [UIColor colorWithRed:153.0f/255.0f
+                         green:153.0f/255.0f
+                          blue:153.0f/255.0f
+                         alpha:1.0f];
 }
 
 - (UIColor *)tintColor
 {
-    return [UIColor redColor];
+  return [UIColor whiteColor];
 }
 
 - (UIColor *)backgroundAlternativeColor
 {
-    return [UIColor darkGrayColor];
+  return [UIColor colorWithRed:77.0f/255.0f
+                         green:77.0f/255.0f
+                          blue:77.0f/255.0f
+                         alpha:1.0f];
 }
 
+- (UIKeyboardAppearance)keyboardAppearance
+{
+  return UIKeyboardAppearanceDark;
+}
 @end

@@ -23,8 +23,8 @@
 
 - (void)addVersionNumber
 {
-    NSString *versionNumber = [BKBreveVersionNumber versionNumber];
-    self.textView.text = [self.textView.text stringByAppendingFormat:@"\nBreve Text Effects %@", versionNumber];
+  NSString *versionNumber = [BKBreveVersionNumber versionNumber];
+  self.textView.text = [self.textView.text stringByAppendingFormat:@"\nBreve Text Effects %@", versionNumber];
 }
 
 @end

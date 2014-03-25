@@ -7,6 +7,7 @@
 //
 
 #import "BKBreveThemeAbstractClass.h"
+#import "BKBreveEffectsInputView.h"
 
 @implementation BKBreveThemeAbstractClass
 
@@ -16,6 +17,7 @@
   [[UITableView appearance] setTintColor:[self tintColor]];
   [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
   [[UITextView appearance] setTextColor:[self foregroundColor]];
+  [[UITextField appearance] setKeyboardAppearance:[self keyboardAppearance]];
   [[UINavigationBar appearance] setBarTintColor:[self backgroundAlternativeColor]];
   [[UITableViewCell appearance] setBackgroundColor:[self backgroundAlternativeColor]];
   [[UILabel appearance] setTextColor:[self foregroundColor]];
@@ -25,6 +27,8 @@
   [[UINavigationBar appearance] setTintColor:[self tintColor]];
   [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [self tintColor]}];
   [[UISegmentedControl appearance] setTintColor:[self tintColor]];
+  [[UIToolbar appearance] setBarTintColor:[self backgroundColor]];
+  [[BKBreveEffectsInputView appearance] setBackgroundColor:[self backgroundColor]];
 }
 
 @end

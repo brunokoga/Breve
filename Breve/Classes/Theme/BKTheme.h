@@ -18,6 +18,7 @@
 - (UIColor *)backgroundAlternativeColor;
 - (UIColor *)foregroundColor;
 - (UIColor *)tintColor;
+- (UIKeyboardAppearance)keyboardAppearance;
 
 - (void)applyAppearance;
 
