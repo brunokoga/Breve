@@ -18,8 +18,8 @@
   [[UITextView appearance] setBackgroundColor:[self backgroundColor]];
   [[UITextView appearance] setTextColor:[self foregroundColor]];
   [[UITextField appearance] setKeyboardAppearance:[self keyboardAppearance]];
-  [[UINavigationBar appearance] setBarTintColor:[self backgroundAlternativeColor]];
-  [[UITableViewCell appearance] setBackgroundColor:[self backgroundAlternativeColor]];
+  [[UINavigationBar appearance] setBarTintColor:[self backgroundColor]];
+  [[UITableViewCell appearance] setBackgroundColor:[self backgroundColor]];
   [[UILabel appearance] setTextColor:[self foregroundColor]];
   [[UITableView appearance] setBackgroundColor:[self backgroundColor]];
   [[UIButton appearance] setTintColor:[self tintColor]];

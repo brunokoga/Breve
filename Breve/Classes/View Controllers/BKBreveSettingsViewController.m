@@ -110,7 +110,7 @@
   [self.doneBarButtonItem setTitleTextAttributes:attributes
                                         forState:UIControlStateNormal];
 
-  [self.tableView setBackgroundColor:[theme backgroundColor]];
+  [self.tableView setBackgroundColor:[theme backgroundAlternativeColor]];
   [self.tableView setTintColor:[theme tintColor]];
 }
 

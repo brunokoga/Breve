@@ -14,16 +14,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="427" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
+                        <barButtonItem systemItem="action" id="pvk-D4-edV">
+                            <connections>
+                                <action selector="copyButtonPressed:" destination="-1" id="sld-Iw-WeB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="BJh-L6-kn5"/>
                         <barButtonItem image="19-gear" id="CRU-5l-Aah">
                             <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
                             <connections>
                                 <action selector="settingsButtonPressed:" destination="-1" id="pun-Zk-BZE"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem width="4" style="plain" systemItem="fixedSpace" id="3P7-o2-qjL"/>
-                        <barButtonItem systemItem="action" id="pvk-D4-edV">
-                            <connections>
-                                <action selector="copyButtonPressed:" destination="-1" id="sld-Iw-WeB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="hBf-tc-C4H"/>
@@ -38,12 +38,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Xuf-IW-iQB" firstAttribute="top" secondItem="1" secondAttribute="top" id="7WR-uH-RMD"/>
+                <constraint firstAttribute="bottom" secondItem="Xuf-IW-iQB" secondAttribute="bottom" id="RCO-kI-XWk"/>
+                <constraint firstAttribute="centerX" secondItem="Xuf-IW-iQB" secondAttribute="centerX" id="YlD-fV-IjM"/>
                 <constraint firstAttribute="trailing" secondItem="Xuf-IW-iQB" secondAttribute="trailing" id="l5a-Q9-pMI"/>
                 <constraint firstItem="Xuf-IW-iQB" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wzI-yI-frM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="textOrEffectsButton" destination="xP7-EL-rot" id="0lm-jb-Wzl"/>
+                <outlet property="toolBar" destination="Xuf-IW-iQB" id="Izh-L5-H9x"/>
             </connections>
         </view>
     </objects>

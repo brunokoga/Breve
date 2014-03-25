@@ -8,6 +8,10 @@
 
 #import "BKBreveInputAccessoryView.h"
 
+@interface BKBreveInputAccessoryView ()
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+@end
+
 @implementation BKBreveInputAccessoryView
 
 - (void)awakeFromNib
@@ -18,7 +22,6 @@
 
 - (void)setup
 {
-    
 }
 
 @end
