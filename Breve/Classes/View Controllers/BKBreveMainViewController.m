@@ -95,6 +95,7 @@
   [self.effectsInputView setBackgroundColor:[theme backgroundAlternativeColor]];
   [self loadInputAccessoryView];
   [self.textView setKeyboardAppearance:[theme keyboardAppearance]];
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated
