@@ -21,15 +21,20 @@
     return sharedInstance;
 }
 
+static NSString *const kBreveSettingsDidRunBefore = @"BKBreveDidRunBefore";
+
 - (void)loadSettings
 {
-  NSString *firstRunKey = @"BKBreveDidRunBefore";
-  BOOL firstTime = ![self boolForKey:firstRunKey];
+  BOOL firstTime = ![self boolForKey:kBreveSettingsDidRunBefore];
   if (firstTime) {
-    [self setBOOL:YES forKey:firstRunKey];
-    [self setRemoveAccentsAndDiacritics:YES];
-    [self setAutocorrection:YES];
+    [self firstRunSetUp];
   }
+}
+
+- (void)firstRunSetUp {
+  [self setBOOL:YES forKey:kBreveSettingsDidRunBefore];
+  [self setRemoveAccentsAndDiacritics:YES];
+  [self setAutocorrection:YES];
 }
 
 #pragma mark - Helpers
