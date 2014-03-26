@@ -32,11 +32,6 @@
 - (UIColor *)tintColor
 {
   return [UIColor whiteColor];
-  /*return [UIColor colorWithRed:244.0/255.0
-                         green:88.0/255.0
-                          blue:208.0/255.0
-                         alpha:1.0];
-*/
 }
 
 - (UIColor *)backgroundAlternativeColor

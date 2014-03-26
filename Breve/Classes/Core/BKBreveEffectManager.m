@@ -8,6 +8,10 @@
 
 #import "BKBreveEffectManager.h"
 
+@interface BKBreveEffectManager ()
+//cache. key = effect name; value = BKBreveEffects instance
+@property (strong, nonatomic) NSMutableDictionary *effectsCache;
+@end
 @implementation BKBreveEffectManager
 
 + (id)sharedManager
@@ -20,6 +24,59 @@
         sharedManager.normalText = @"";
     });
     return sharedManager;
+}
+
+- (NSString *)convertString:(NSString *)string
+                fromMapping:(NSDictionary *)fromMapping
+                  toMapping:(NSDictionary *)toMapping
+{
+  NSMutableString *mutableString = [[NSMutableString alloc] initWithString:string];
+
+  for (NSString *key in [toMapping allKeys]) {
+    [mutableString replaceOccurrencesOfString:key
+                                   withString:toMapping[key]
+                                      options:0
+                                        range:NSMakeRange(0, [mutableString length])];
+
+  }
+  return [mutableString copy];
+}
+
+- (NSString *)convertString:(NSString *)string
+                 fromEffect:(BKBreveEffect *)fromEffect
+                   toEffect:(BKBreveEffect *)toEffect
+{
+  BKBreveEffect *cachedToEffect = [self cacheAddOrReturnCachedEffect:toEffect];
+  BKBreveEffect *cachedFromEffect = [self cacheAddOrReturnCachedEffect:fromEffect];
+
+  return [self convertString:string
+                 fromMapping:cachedFromEffect.fromMapping
+                   toMapping:cachedToEffect.toMapping];
+}
+
+- (BKBreveEffect *)cacheAddOrReturnCachedEffect:(BKBreveEffect *)effect {
+  BKBreveEffect *cachedEffect = self.effectsCache[effect.effectName];
+  if (!cachedEffect) {
+    cachedEffect = effect;
+    [self.effectsCache addEntriesFromDictionary:@{effect.effectName : effect}];
+  }
+  return cachedEffect;
+}
+
+- (NSString *)convertString:(NSString *)string
+         fromEffectWithName:(NSString *)fromEffectName
+           toEffectWithName:(NSString *)toEffectName
+{
+  NSString *className = @"BKBreveEffect";
+  NSString *fromEffectFirstLetterUppercase = [[fromEffectName substringToIndex:1] uppercaseString];
+  NSString *fromClassName = [className stringByAppendingFormat:@"%@%@", fromEffectFirstLetterUppercase, [fromEffectName substringFromIndex:1]];
+
+  NSString *toEffectFirstLetterUppercase = [[toEffectName substringToIndex:1] uppercaseString];
+  NSString *toClassName = [className stringByAppendingFormat:@"%@%@", toEffectFirstLetterUppercase, [toEffectName substringFromIndex:1]];
+
+  return [self convertString:string
+                  fromEffect:[NSClassFromString(fromClassName) new]
+                    toEffect:[NSClassFromString(toClassName) new]];
 }
 
 @end

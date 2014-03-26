@@ -30,7 +30,7 @@
 		D33EBF70183A3D1900272403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF62183A3D1900272403 /* main.m */; };
 		D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */; };
 		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
-		D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */; };
+		D33EBF81183A3D7400272403 /* BKBreveEffectManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveEffectManagerTests.m */; };
 		D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */; };
 		D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */; };
 		D36E91A3185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */; };
@@ -100,7 +100,7 @@
 		D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
 		D33EBF62183A3D1900272403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCoreTests.m; sourceTree = "<group>"; };
+		D33EBF7D183A3D7400272403 /* BKBreveEffectManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectManagerTests.m; sourceTree = "<group>"; };
 		D3442B2F18576A6F00342E15 /* BKBreveURLSchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveURLSchemeManager.h; path = "URL Scheme/BKBreveURLSchemeManager.h"; sourceTree = "<group>"; };
 		D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveURLSchemeManager.m; path = "URL Scheme/BKBreveURLSchemeManager.m"; sourceTree = "<group>"; };
 		D36E919E185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveInputAccessoryView.h; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */,
-				D33EBF7D183A3D7400272403 /* BKBreveCoreTests.m */,
+				D33EBF7D183A3D7400272403 /* BKBreveEffectManagerTests.m */,
 				D327A1A418D1ECB600AD7F6F /* BKBasicThemeTests.m */,
 				D327A1A618D1EEC600AD7F6F /* BKDarkThemeTests.m */,
 				D327A1A818D1EF5000AD7F6F /* BKPowerGirlThemeTests.m */,
@@ -493,7 +493,7 @@
 			files = (
 				D327A1A918D1EF5000AD7F6F /* BKPowerGirlThemeTests.m in Sources */,
 				D327A1A718D1EEC600AD7F6F /* BKDarkThemeTests.m in Sources */,
-				D33EBF81183A3D7400272403 /* BKBreveCoreTests.m in Sources */,
+				D33EBF81183A3D7400272403 /* BKBreveEffectManagerTests.m in Sources */,
 				D327A1AB18D1EFF000AD7F6F /* BKBreveThemeManagerTests.m in Sources */,
 				D327A1A518D1ECB600AD7F6F /* BKBasicThemeTests.m in Sources */,
 			);

@@ -7,13 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "BKBreveCore.h"
+#import "BKBreveEffectManager.h"
 
-@interface BKBreveCoreTests : XCTestCase
+@interface BKBreveEffectManagerTests : XCTestCase
 
 @end
 
-@implementation BKBreveCoreTests
+@implementation BKBreveEffectManagerTests
 
 - (void)setUp
 {
@@ -34,24 +34,13 @@
     NSString *bubs;
     
     original = @"Klebao Vida Loka";
-    bubs = [[BKBreveCore sharedInstance] convertFromNormalToBubs:original];
-    expected = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
+    bubs = [[BKBreveEffectManager sharedManager] convertString:original
+                                             fromEffectWithName:@"Normal"
+                                               toEffectWithName:@"Bubs"];
+  expected = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
     
     XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");
 
 }
 
-- (void)testBubsToNormal
-{
-    NSString *original;
-    NSString *expected;
-    NSString *bubs;
-    
-    original = @"Ⓚⓛⓔⓑⓐⓞ Ⓥⓘⓓⓐ Ⓛⓞⓚⓐ";
-    bubs = [[BKBreveCore sharedInstance] convertFromBubsToNormal:original];
-    expected = @"Klebao Vida Loka";
-    
-    XCTAssertEqualObjects(bubs, expected, @"Deu ruim...");
-    
-}
 @end

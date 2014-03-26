@@ -8,13 +8,13 @@
 
 #import "BKBreveMainViewController.h"
 #import "BKBubsSegmentedControl.h"
-#import "BKBreveCore.h"
 #import "BKBreveSettings.h"
 #import "NSString+AccentsAndDiacritics.h"
 #import "BKBreveURLSchemeManager.h"
 #import "BKBreveEffectsInputView.h"
 #import "BKBreveEffectManager.h"
 #import "BKBreveInputAccessoryView.h"
+#import "BKBreveEffectBubs.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -34,7 +34,6 @@
   [super viewDidLoad];
   self.textView.font = [UIFont systemFontOfSize:26.0];
   [self setUpGestureRecognizers];
-//    [self loadInputAccessoryView];
 }
 
 - (void)loadInputAccessoryView
@@ -234,7 +233,9 @@
       {
         textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
       }
-      self.textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:textToBeConverted];
+      self.textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
+                                                               fromEffect:[BKBreveEffectNormal new]
+                                                                 toEffect:[BKBreveEffectBubs new]];
       break;
     }
     default:
@@ -260,7 +261,15 @@
 {
   if (self.segmentedControl.selectedSegmentIndex == BKBubsSegmentedControlIndexBubs)
   {
-    textView.text = [[BKBreveCore sharedInstance] convertFromNormalToBubs:textView.text];
+    NSString *textToBeConverted = self.textView.text;
+    BKBreveSettings *settings = [BKBreveSettings generalSettings];
+    if ([settings removeAccentsAndDiacritics])
+    {
+      textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
+    }
+    textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
+                                                             fromEffect:[BKBreveEffectNormal new]
+                                                               toEffect:[BKBreveEffectBubs new]];
     [textView setSelectedRange:self.cursorRange];
   }
 }

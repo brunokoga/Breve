@@ -16,4 +16,11 @@
 
 + (id)sharedManager;
 
+- (NSString *)convertString:(NSString *)string
+                 fromEffect:(BKBreveEffect *)fromEffect
+                   toEffect:(BKBreveEffect *)toEffect;
+
+- (NSString *)convertString:(NSString *)string
+         fromEffectWithName:(NSString *)fromEffectName
+           toEffectWithName:(NSString *)toEffectName;
 @end

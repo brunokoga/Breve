@@ -42,10 +42,7 @@
   UIColor *expectedForegroundColor = [UIColor whiteColor];
   XCTAssertEqualObjects(expectedForegroundColor, [self.theme foregroundColor], @"Wrong Color");
   
-  UIColor *expectedTintColor = [UIColor colorWithRed:244.0/255.0
-                                               green:88.0/255.0
-                                                blue:208.0/255.0
-                                               alpha:1.0];
+  UIColor *expectedTintColor = [UIColor whiteColor];
   XCTAssertEqualObjects(expectedTintColor, [self.theme tintColor], @"Wrong Color");
   
   UIColor *expectedBackgroundAlternativeColor = [UIColor colorWithRed:242.0/255.0

@@ -1,3 +1,2 @@
-- Improved Themes
+- Improved Accents and Diacritcs parser
 
-Is the basic color ok? Are dark and pink theme ok for release?

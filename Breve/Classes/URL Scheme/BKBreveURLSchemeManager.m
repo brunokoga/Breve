@@ -8,40 +8,41 @@
 
 #import "BKBreveURLSchemeManager.h"
 #import "BKBreveCore.h"
+#import "BKBreveEffectManager.h"
 #import <InterAppCommunication/IACClient.h>
 
 @implementation BKBreveURLSchemeManager
 
 + (void)setup
 {
-    [IACManager sharedManager].callbackURLScheme = @"breve";
-    
-       [[IACManager sharedManager] handleAction:@"applyEffect"
-                                   withBlock:^(NSDictionary *inputParameters, IACSuccessBlock success, IACFailureBlock failure) {
-                                       if (success) {
-                                           
-                                           
-                                           NSString *string = inputParameters[@"text"];
-                                           NSString *fromEffect = inputParameters[@"fromEffect"];
-                                           NSString *toEffect = inputParameters[@"toEffect"];
-                                           
-                                           BKBreveCore *core = [BKBreveCore sharedInstance];
-                                           
-                                           NSString *convertedString = [core convertString:string
-                                                        fromEffectWithName:fromEffect
-                                                          toEffectWithName:toEffect];
-                           
-                                           NSDictionary *successParameters = @{@"[[output]]": convertedString};
-                                           
-                                           
-                                           success(successParameters, NO);
-                                       }
-                                   }];
+  [IACManager sharedManager].callbackURLScheme = @"breve";
+
+  [[IACManager sharedManager] handleAction:@"applyEffect"
+                                 withBlock:^(NSDictionary *inputParameters, IACSuccessBlock success, IACFailureBlock failure) {
+                                   if (success) {
+
+
+                                     NSString *string = inputParameters[@"text"];
+                                     NSString *fromEffect = inputParameters[@"fromEffect"];
+                                     NSString *toEffect = inputParameters[@"toEffect"];
+
+                                     BKBreveEffectManager *effectManager = [BKBreveEffectManager sharedManager];
+
+                                     NSString *convertedString = [effectManager convertString:string
+                                                                           fromEffectWithName:fromEffect
+                                                                             toEffectWithName:toEffect];
+
+                                     NSDictionary *successParameters = @{@"[[output]]": convertedString};
+
+
+                                     success(successParameters, NO);
+                                   }
+                                 }];
 }
 
 + (BOOL)handleOpenURL:(NSURL *)url
 {
-    return [[IACManager sharedManager] handleOpenURL:url];
+  return [[IACManager sharedManager] handleOpenURL:url];
 }
 
 /*
