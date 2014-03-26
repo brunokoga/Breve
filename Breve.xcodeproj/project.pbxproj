@@ -19,7 +19,6 @@
 		D32980BD185E554A00E1B12D /* BKBreveEffectNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980BC185E554A00E1B12D /* BKBreveEffectNormal.m */; };
 		D32980C0185E555C00E1B12D /* BKBreveEffectBubs.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980BF185E555C00E1B12D /* BKBreveEffectBubs.m */; };
 		D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF48183A3D1900272403 /* BKAppDelegate.m */; };
-		D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF4E183A3D1900272403 /* BKBreveCore.m */; };
 		D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF50183A3D1900272403 /* BKBreveSettings.m */; };
 		D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF53183A3D1900272403 /* BKBreveAboutViewController.m */; };
 		D33EBF69183A3D1900272403 /* BKBreveBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF55183A3D1900272403 /* BKBreveBaseViewController.m */; };
@@ -82,8 +81,6 @@
 		D33EBF48183A3D1900272403 /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		D33EBF49183A3D1900272403 /* Breve-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
 		D33EBF4A183A3D1900272403 /* Breve-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Breve-Prefix.pch"; sourceTree = "<group>"; };
-		D33EBF4D183A3D1900272403 /* BKBreveCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveCore.h; sourceTree = "<group>"; };
-		D33EBF4E183A3D1900272403 /* BKBreveCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveCore.m; sourceTree = "<group>"; };
 		D33EBF4F183A3D1900272403 /* BKBreveSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveSettings.h; sourceTree = "<group>"; };
 		D33EBF50183A3D1900272403 /* BKBreveSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettings.m; sourceTree = "<group>"; };
 		D33EBF52183A3D1900272403 /* BKBreveAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveAboutViewController.h; sourceTree = "<group>"; };
@@ -194,8 +191,6 @@
 		D33EBF4C183A3D1900272403 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D33EBF4D183A3D1900272403 /* BKBreveCore.h */,
-				D33EBF4E183A3D1900272403 /* BKBreveCore.m */,
 				D33EBF4F183A3D1900272403 /* BKBreveSettings.h */,
 				D33EBF50183A3D1900272403 /* BKBreveSettings.m */,
 				D37CADAB1848E18000AE3E91 /* BKBreveVersionNumber.h */,
@@ -480,7 +475,6 @@
 				D3D4B963184CCF3200F589EB /* BKBreveThemes.m in Sources */,
 				D33EBF6A183A3D1900272403 /* BKBreveMainViewController.m in Sources */,
 				D3D4B95F184CCB4600F589EB /* BKThemeManager.m in Sources */,
-				D33EBF66183A3D1900272403 /* BKBreveCore.m in Sources */,
 				D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */,
 				D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */,
 				D3D4B96C184CF64100F589EB /* BKBreveThemeAbstractClass.m in Sources */,

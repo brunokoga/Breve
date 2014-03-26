@@ -7,7 +7,6 @@
 //
 
 #import "BKBreveURLSchemeManager.h"
-#import "BKBreveCore.h"
 #import "BKBreveEffectManager.h"
 #import <InterAppCommunication/IACClient.h>
 
