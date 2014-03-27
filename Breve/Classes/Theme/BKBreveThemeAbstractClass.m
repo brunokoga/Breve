@@ -27,6 +27,8 @@
   [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [self tintColor]}];
   [[UISegmentedControl appearance] setTintColor:[self tintColor]];
   [[UIToolbar appearance] setBarTintColor:[self backgroundColor]];
+  [[UITableView appearance] setBackgroundColor:[self backgroundAlternativeColor]];
+  [[UITableView appearance] setTintColor:[self tintColor]];
 }
 
 @end

@@ -58,6 +58,7 @@
   }
   BKBreveEffect *effect = self.effects[indexPath.row];
   cell.textLabel.text = [effect effectDisplayName];
+  cell.textLabel.textColor = [[BKThemeManager theme] tintColor];
   return cell;
 }
 
@@ -65,6 +66,8 @@
   BKBreveEffect *effect = self.effects[indexPath.row];
   [[BKBreveEffectManager sharedManager] setEffect:effect];
   [self.delegate effectChanged:effect];
+  [self.tableView deselectRowAtIndexPath:indexPath
+                                animated:YES];
 }
 
 @end

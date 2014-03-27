@@ -52,7 +52,9 @@
   if ([effect isMemberOfClass:[BKBreveEffectNormal class]]) {
     return self.normalText;
   }
-  self.normalText = string;
+  if ([[[BKBreveEffectManager sharedManager] effect] isMemberOfClass:[BKBreveEffectNormal class]]) {
+    self.normalText = string;
+  }
   BKBreveSettings *settings = [BKBreveSettings generalSettings];
   NSString *textToBeConverted = [string copy];
   if ([settings removeAccentsAndDiacritics])
