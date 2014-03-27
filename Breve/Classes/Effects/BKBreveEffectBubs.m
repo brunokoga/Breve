@@ -9,18 +9,8 @@
 #import "BKBreveEffectBubs.h"
 
 @implementation BKBreveEffectBubs
-@synthesize lettersArray = _lettersArray;
 @synthesize toMapping = _toMapping;
 @synthesize fromMapping = _fromMapping;
-
-- (NSArray *)lettersArray
-{
-    if (!_lettersArray) {
-        NSString *lettersString = @"ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨";
-        _lettersArray = [lettersString componentsSeparatedByString:@" "];
-    }
-    return _lettersArray;
-}
 
 - (NSDictionary *)toMapping {
   if (!_toMapping) {

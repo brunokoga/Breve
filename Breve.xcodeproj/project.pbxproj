@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325132FD23ADEB325F5BD818 /* BKBreveEffectNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251391AAFC086D658903E0D /* BKBreveEffectNormal.m */; };
+		325134D3414D1C0D19D04539 /* BKBreveEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32513CFA90E911A587E2135D /* BKBreveEffectManager.m */; };
+		3251358C8122094CDE955A0D /* BKBreveEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 32513C7C5BD562E70C4B4FC2 /* BKBreveEffect.m */; };
+		32513E997E8F75F9CB0ED3C2 /* BKBreveEffectBubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251310DF5D7EFE94D7D44A0 /* BKBreveEffectBubs.m */; };
+		32513F76361F32887E2EEAF1 /* BKBreveEffectSquared.m in Sources */ = {isa = PBXBuildFile; fileRef = 32513E9ACD740D865AE35012 /* BKBreveEffectSquared.m */; };
 		387D17288B694B89AFB1554B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CE93BFED84D6FB55B61C9 /* libPods.a */; };
 		D31D0AED18E4722200707C48 /* BKBreveEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31D0AEB18E4722200707C48 /* BKBreveEffectsViewController.m */; };
 		D31D0AEE18E4722200707C48 /* BKBreveEffectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31D0AEC18E4722200707C48 /* BKBreveEffectsViewController.xib */; };
@@ -16,10 +21,6 @@
 		D327A1A718D1EEC600AD7F6F /* BKDarkThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D327A1A618D1EEC600AD7F6F /* BKDarkThemeTests.m */; };
 		D327A1A918D1EF5000AD7F6F /* BKPowerGirlThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D327A1A818D1EF5000AD7F6F /* BKPowerGirlThemeTests.m */; };
 		D327A1AB18D1EFF000AD7F6F /* BKBreveThemeManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D327A1AA18D1EFF000AD7F6F /* BKBreveThemeManagerTests.m */; };
-		D32980B7185E548300E1B12D /* BKBreveEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980B6185E548300E1B12D /* BKBreveEffectManager.m */; };
-		D32980BA185E54F000E1B12D /* BKBreveEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980B9185E54F000E1B12D /* BKBreveEffect.m */; };
-		D32980BD185E554A00E1B12D /* BKBreveEffectNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980BC185E554A00E1B12D /* BKBreveEffectNormal.m */; };
-		D32980C0185E555C00E1B12D /* BKBreveEffectBubs.m in Sources */ = {isa = PBXBuildFile; fileRef = D32980BF185E555C00E1B12D /* BKBreveEffectBubs.m */; };
 		D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF48183A3D1900272403 /* BKAppDelegate.m */; };
 		D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF50183A3D1900272403 /* BKBreveSettings.m */; };
 		D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF53183A3D1900272403 /* BKBreveAboutViewController.m */; };
@@ -61,6 +62,16 @@
 
 /* Begin PBXFileReference section */
 		305CE93BFED84D6FB55B61C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3251310DF5D7EFE94D7D44A0 /* BKBreveEffectBubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectBubs.m; path = Effects/BKBreveEffectBubs.m; sourceTree = "<group>"; };
+		3251331EE19031F7F7201923 /* BKBreveEffectBubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectBubs.h; path = Effects/BKBreveEffectBubs.h; sourceTree = "<group>"; };
+		325135119EF7C98FF6A4256D /* BKBreveEffectNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectNormal.h; path = Effects/BKBreveEffectNormal.h; sourceTree = "<group>"; };
+		3251391AAFC086D658903E0D /* BKBreveEffectNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectNormal.m; path = Effects/BKBreveEffectNormal.m; sourceTree = "<group>"; };
+		32513C7C5BD562E70C4B4FC2 /* BKBreveEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffect.m; path = Effects/BKBreveEffect.m; sourceTree = "<group>"; };
+		32513CFA90E911A587E2135D /* BKBreveEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectManager.m; path = Core/BKBreveEffectManager.m; sourceTree = "<group>"; };
+		32513DCD786A3CCD1042E86D /* BKBreveEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectManager.h; path = Core/BKBreveEffectManager.h; sourceTree = "<group>"; };
+		32513E16BB192FE7635136A9 /* BKBreveEffectSquared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectSquared.h; path = Effects/BKBreveEffectSquared.h; sourceTree = "<group>"; };
+		32513E9ACD740D865AE35012 /* BKBreveEffectSquared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectSquared.m; path = Effects/BKBreveEffectSquared.m; sourceTree = "<group>"; };
+		32513F621B28CD1D3C1BB459 /* BKBreveEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffect.h; path = Effects/BKBreveEffect.h; sourceTree = "<group>"; };
 		8D07D12E78604413BE91F97D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D31D0AEA18E4722200707C48 /* BKBreveEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveEffectsViewController.h; sourceTree = "<group>"; };
 		D31D0AEB18E4722200707C48 /* BKBreveEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectsViewController.m; sourceTree = "<group>"; };
@@ -71,14 +82,6 @@
 		D327A1A618D1EEC600AD7F6F /* BKDarkThemeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKDarkThemeTests.m; sourceTree = "<group>"; };
 		D327A1A818D1EF5000AD7F6F /* BKPowerGirlThemeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPowerGirlThemeTests.m; sourceTree = "<group>"; };
 		D327A1AA18D1EFF000AD7F6F /* BKBreveThemeManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveThemeManagerTests.m; sourceTree = "<group>"; };
-		D32980B5185E548300E1B12D /* BKBreveEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectManager.h; path = Core/BKBreveEffectManager.h; sourceTree = "<group>"; };
-		D32980B6185E548300E1B12D /* BKBreveEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectManager.m; path = Core/BKBreveEffectManager.m; sourceTree = "<group>"; };
-		D32980B8185E54F000E1B12D /* BKBreveEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffect.h; path = Effects/BKBreveEffect.h; sourceTree = "<group>"; };
-		D32980B9185E54F000E1B12D /* BKBreveEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffect.m; path = Effects/BKBreveEffect.m; sourceTree = "<group>"; };
-		D32980BB185E554A00E1B12D /* BKBreveEffectNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectNormal.h; path = Effects/BKBreveEffectNormal.h; sourceTree = "<group>"; };
-		D32980BC185E554A00E1B12D /* BKBreveEffectNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectNormal.m; path = Effects/BKBreveEffectNormal.m; sourceTree = "<group>"; };
-		D32980BE185E555C00E1B12D /* BKBreveEffectBubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBreveEffectBubs.h; path = Effects/BKBreveEffectBubs.h; sourceTree = "<group>"; };
-		D32980BF185E555C00E1B12D /* BKBreveEffectBubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveEffectBubs.m; path = Effects/BKBreveEffectBubs.m; sourceTree = "<group>"; };
 		D33EBF47183A3D1900272403 /* BKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
 		D33EBF48183A3D1900272403 /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		D33EBF49183A3D1900272403 /* Breve-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Breve-Info.plist"; sourceTree = "<group>"; };
@@ -153,6 +156,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32513D3C367F8EE15A32F821 /* FX */ = {
+			isa = PBXGroup;
+			children = (
+				3251391AAFC086D658903E0D /* BKBreveEffectNormal.m */,
+				32513F621B28CD1D3C1BB459 /* BKBreveEffect.h */,
+				32513C7C5BD562E70C4B4FC2 /* BKBreveEffect.m */,
+				3251331EE19031F7F7201923 /* BKBreveEffectBubs.h */,
+				3251310DF5D7EFE94D7D44A0 /* BKBreveEffectBubs.m */,
+				32513DCD786A3CCD1042E86D /* BKBreveEffectManager.h */,
+				32513CFA90E911A587E2135D /* BKBreveEffectManager.m */,
+				325135119EF7C98FF6A4256D /* BKBreveEffectNormal.h */,
+				32513E9ACD740D865AE35012 /* BKBreveEffectSquared.m */,
+				32513E16BB192FE7635136A9 /* BKBreveEffectSquared.h */,
+			);
+			name = FX;
+			sourceTree = "<group>";
+		};
 		D33EBF46183A3D1900272403 /* Breve */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,18 +189,11 @@
 			children = (
 				D3442B2F18576A6F00342E15 /* BKBreveURLSchemeManager.h */,
 				D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */,
-				D32980B5185E548300E1B12D /* BKBreveEffectManager.h */,
-				D32980B6185E548300E1B12D /* BKBreveEffectManager.m */,
-				D32980BB185E554A00E1B12D /* BKBreveEffectNormal.h */,
-				D32980BC185E554A00E1B12D /* BKBreveEffectNormal.m */,
-				D32980BE185E555C00E1B12D /* BKBreveEffectBubs.h */,
-				D32980BF185E555C00E1B12D /* BKBreveEffectBubs.m */,
-				D32980B8185E54F000E1B12D /* BKBreveEffect.h */,
-				D32980B9185E54F000E1B12D /* BKBreveEffect.m */,
 				D3D4B958184CCA8D00F589EB /* Theme */,
 				D33EBF4C183A3D1900272403 /* Core */,
 				D33EBF51183A3D1900272403 /* View Controllers */,
 				D33EBF5C183A3D1900272403 /* Views */,
+				32513D3C367F8EE15A32F821 /* FX */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -456,14 +469,10 @@
 				D3A38BEB18AA88E000CA021A /* BKBrevePowerGirlTheme.m in Sources */,
 				D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */,
 				D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */,
-				D32980C0185E555C00E1B12D /* BKBreveEffectBubs.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
-				D32980BD185E554A00E1B12D /* BKBreveEffectNormal.m in Sources */,
 				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
 				D31D0AED18E4722200707C48 /* BKBreveEffectsViewController.m in Sources */,
-				D32980BA185E54F000E1B12D /* BKBreveEffect.m in Sources */,
 				D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */,
-				D32980B7185E548300E1B12D /* BKBreveEffectManager.m in Sources */,
 				D33EBF68183A3D1900272403 /* BKBreveAboutViewController.m in Sources */,
 				D33EBF70183A3D1900272403 /* main.m in Sources */,
 				D3D4B963184CCF3200F589EB /* BKBreveThemes.m in Sources */,
@@ -472,6 +481,11 @@
 				D33EBF67183A3D1900272403 /* BKBreveSettings.m in Sources */,
 				D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */,
 				D3D4B96C184CF64100F589EB /* BKBreveThemeAbstractClass.m in Sources */,
+				325132FD23ADEB325F5BD818 /* BKBreveEffectNormal.m in Sources */,
+				3251358C8122094CDE955A0D /* BKBreveEffect.m in Sources */,
+				32513E997E8F75F9CB0ED3C2 /* BKBreveEffectBubs.m in Sources */,
+				325134D3414D1C0D19D04539 /* BKBreveEffectManager.m in Sources */,
+				32513F76361F32887E2EEAF1 /* BKBreveEffectSquared.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

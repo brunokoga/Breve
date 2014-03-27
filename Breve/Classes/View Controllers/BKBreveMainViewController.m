@@ -13,6 +13,7 @@
 #import "BKBreveInputAccessoryView.h"
 #import "BKBreveEffectBubs.h"
 #import "BKBreveEffectsViewController.h"
+#import "BKBreveEffectSquared.h"
 
 @interface BKBreveMainViewController () <UITextViewDelegate, BKBreveEffectDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -180,7 +181,10 @@
   {
     if (!self.effectsViewController)
     {
-      NSArray *effects = @[[BKBreveEffectNormal new], [BKBreveEffectBubs new]];
+      NSArray *effects = @[
+          [BKBreveEffectNormal new],
+          [BKBreveEffectBubs new],
+          [BKBreveEffectSquared new]];
       self.effectsViewController = [[BKBreveEffectsViewController alloc] initWithEffects:effects delegate:self];
     }
     self.textView.inputView = self.effectsViewController.view;
@@ -230,6 +234,8 @@
   self.cursorRange = NSMakeRange(location, length);
   //fixes normal text
   NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
+  //TODO: iterate through ranges to make sure we're swapping the correct text
+  //and even further: that we don't crash!
   [[BKBreveEffectManager sharedManager] setNormalText:[normalText stringByReplacingCharactersInRange:range withString:text]];
   return YES;
 }

@@ -10,9 +10,6 @@
 
 @interface BKBreveEffect : NSObject
 
-//deprecated
-@property (strong, nonatomic, readonly) NSArray *lettersArray;
-
 //from Normal to Effect
 @property (strong, nonatomic, readonly) NSDictionary *toMapping;
 //from Effect to Normal
