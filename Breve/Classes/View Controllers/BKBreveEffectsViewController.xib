@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-fA-G40">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-fA-G40">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -26,6 +26,12 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yhL-fA-G40" firstAttribute="leading" secondItem="4OM-p9-F3S" secondAttribute="leading" id="F80-VM-Cws"/>
+                <constraint firstItem="yhL-fA-G40" firstAttribute="top" secondItem="4OM-p9-F3S" secondAttribute="top" id="t4w-e7-Nqc"/>
+                <constraint firstAttribute="bottom" secondItem="yhL-fA-G40" secondAttribute="bottom" id="tR0-3N-u30"/>
+                <constraint firstAttribute="trailing" secondItem="yhL-fA-G40" secondAttribute="trailing" id="y96-hf-xDA"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
