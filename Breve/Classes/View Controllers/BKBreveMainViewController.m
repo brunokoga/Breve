@@ -7,21 +7,18 @@
 //
 
 #import "BKBreveMainViewController.h"
-#import "BKBubsSegmentedControl.h"
 #import "BKBreveSettings.h"
-#import "NSString+AccentsAndDiacritics.h"
 #import "BKBreveURLSchemeManager.h"
-#import "BKBreveEffectsInputView.h"
 #import "BKBreveEffectManager.h"
 #import "BKBreveInputAccessoryView.h"
 #import "BKBreveEffectBubs.h"
+#import "BKBreveEffectsViewController.h"
 
-@interface BKBreveMainViewController () <UITextViewDelegate>
+@interface BKBreveMainViewController () <UITextViewDelegate, BKBreveEffectDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet BKBubsSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewVerticalBottomSpaceConstraint;
 @property (nonatomic) NSRange cursorRange;
-@property (strong, nonatomic) BKBreveEffectsInputView *effectsInputView;
+@property (strong, nonatomic) BKBreveEffectsViewController *effectsViewController;
 
 @end
 
@@ -91,7 +88,6 @@
 
   id<BKTheme> theme = [BKThemeManager theme];
   self.view.backgroundColor = [theme backgroundColor];
-  [self.effectsInputView setBackgroundColor:[theme backgroundAlternativeColor]];
   [self loadInputAccessoryView];
   [self.textView setKeyboardAppearance:[theme keyboardAppearance]];
 
@@ -115,16 +111,6 @@
 - (void)swipeToClear:(UISwipeGestureRecognizer *)gestureRecognizer
 {
   self.textView.text = @"";
-}
-
-- (void)selectSegmentedControlIndexByEffectName:(NSString *)effectName
-{
-  NSInteger toIndex = 0;
-  if ([effectName isEqualToString:@"bubs"])
-  {
-    toIndex = 1;
-  }
-  [self.segmentedControl setSelectedSegmentIndex:toIndex];
 }
 
 #pragma mark - Keyboard Notifications
@@ -192,16 +178,12 @@
   }
   else
   {
-    if (!self.effectsInputView)
+    if (!self.effectsViewController)
     {
-      NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BKBreveEffectsInputView"
-                                                   owner:self
-                                                 options:nil];
-      self.effectsInputView = nib[0];
+      NSArray *effects = @[[BKBreveEffectNormal new], [BKBreveEffectBubs new]];
+      self.effectsViewController = [[BKBreveEffectsViewController alloc] initWithEffects:effects delegate:self];
     }
-    id<BKTheme> theme = [BKThemeManager theme];
-    [self.effectsInputView setBackgroundColor:[theme backgroundAlternativeColor]];
-    self.textView.inputView = self.effectsInputView;
+    self.textView.inputView = self.effectsViewController.view;
     [self adjustInputAccessoryViewToOrientation:[self interfaceOrientation]];
   }
   [self.textView reloadInputViews];
@@ -218,32 +200,6 @@
   [self shareAction];
 }
 
-- (IBAction)segmentedControlValueChanged:(id)sender {
-  BKBubsSegmentedControl *segmentedControl = sender;
-  switch (segmentedControl.selectedSegmentIndex) {
-    case BKBubsSegmentedControlIndexNormal:
-      self.textView.text = [[BKBreveEffectManager sharedManager] normalText];
-      break;
-    case BKBubsSegmentedControlIndexBubs:
-    {
-      [[BKBreveEffectManager sharedManager] setNormalText:self.textView.text];
-      NSString *textToBeConverted = self.textView.text;
-      BKBreveSettings *settings = [BKBreveSettings generalSettings];
-      if ([settings removeAccentsAndDiacritics])
-      {
-        textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
-      }
-      self.textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
-                                                               fromEffect:[BKBreveEffectNormal new]
-                                                                 toEffect:[BKBreveEffectBubs new]];
-      break;
-    }
-    default:
-      break;
-  }
-}
-
-#pragma mark - Real Actions
 
 - (void)shareAction
 {
@@ -259,19 +215,11 @@
 #pragma mark - UITextFieldDelegate
 - (void)textViewDidChange:(UITextView *)textView
 {
-  if (self.segmentedControl.selectedSegmentIndex == BKBubsSegmentedControlIndexBubs)
-  {
-    NSString *textToBeConverted = self.textView.text;
-    BKBreveSettings *settings = [BKBreveSettings generalSettings];
-    if ([settings removeAccentsAndDiacritics])
-    {
-      textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
-    }
+  BKBreveEffect *effect = [[BKBreveEffectManager sharedManager] effect];
+  NSString *textToBeConverted = self.textView.text;
     textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
-                                                             fromEffect:[BKBreveEffectNormal new]
-                                                               toEffect:[BKBreveEffectBubs new]];
+                                                               toEffect:effect];
     [textView setSelectedRange:self.cursorRange];
-  }
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
@@ -286,4 +234,10 @@
   return YES;
 }
 
+- (void)effectChanged:(BKBreveEffect *)effect
+{
+  NSString *textToBeConverted = self.textView.text;
+  self.textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
+                                                                  toEffect:effect];
+}
 @end

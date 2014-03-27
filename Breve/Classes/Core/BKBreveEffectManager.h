@@ -23,4 +23,7 @@
 - (NSString *)convertString:(NSString *)string
          fromEffectWithName:(NSString *)fromEffectName
            toEffectWithName:(NSString *)toEffectName;
+
+- (NSString *)convertString:(NSString *)string
+                   toEffect:(BKBreveEffect *)effect;
 @end

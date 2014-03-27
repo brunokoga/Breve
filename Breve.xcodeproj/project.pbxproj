@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		387D17288B694B89AFB1554B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CE93BFED84D6FB55B61C9 /* libPods.a */; };
+		D31D0AED18E4722200707C48 /* BKBreveEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31D0AEB18E4722200707C48 /* BKBreveEffectsViewController.m */; };
+		D31D0AEE18E4722200707C48 /* BKBreveEffectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31D0AEC18E4722200707C48 /* BKBreveEffectsViewController.xib */; };
 		D3266E86185887F900F56152 /* BKBreveInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */; };
 		D3266E8818588BF500F56152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3266E8718588BF500F56152 /* Images.xcassets */; };
 		D327A1A518D1ECB600AD7F6F /* BKBasicThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D327A1A418D1ECB600AD7F6F /* BKBasicThemeTests.m */; };
@@ -25,15 +27,12 @@
 		D33EBF6A183A3D1900272403 /* BKBreveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF57183A3D1900272403 /* BKBreveMainViewController.m */; };
 		D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */; };
 		D33EBF6C183A3D1900272403 /* BKBreveSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */; };
-		D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */; };
 		D33EBF70183A3D1900272403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF62183A3D1900272403 /* main.m */; };
 		D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */; };
 		D33EBF7B183A3D5F00272403 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF9B521834E33200C7C33F /* XCTest.framework */; };
 		D33EBF81183A3D7400272403 /* BKBreveEffectManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EBF7D183A3D7400272403 /* BKBreveEffectManagerTests.m */; };
 		D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */; };
 		D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */; };
-		D36E91A3185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */; };
-		D36E91A5185B819100C2B6A6 /* BKBreveEffectsInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */; };
 		D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */; };
 		D37CADAD1848E18000AE3E91 /* BKBreveVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D37CADAC1848E18000AE3E91 /* BKBreveVersionNumber.m */; };
 		D38A5E5D183A3EAB00C015F1 /* BreveTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D38A5E5C183A3EAB00C015F1 /* BreveTests-Info.plist */; };
@@ -63,6 +62,9 @@
 /* Begin PBXFileReference section */
 		305CE93BFED84D6FB55B61C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07D12E78604413BE91F97D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D31D0AEA18E4722200707C48 /* BKBreveEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveEffectsViewController.h; sourceTree = "<group>"; };
+		D31D0AEB18E4722200707C48 /* BKBreveEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectsViewController.m; sourceTree = "<group>"; };
+		D31D0AEC18E4722200707C48 /* BKBreveEffectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKBreveEffectsViewController.xib; sourceTree = "<group>"; };
 		D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKBreveInputAccessoryView.xib; sourceTree = "<group>"; };
 		D3266E8718588BF500F56152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D327A1A418D1ECB600AD7F6F /* BKBasicThemeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBasicThemeTests.m; sourceTree = "<group>"; };
@@ -93,8 +95,6 @@
 		D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveNavigationController.m; sourceTree = "<group>"; };
 		D33EBF5A183A3D1900272403 /* BKBreveSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveSettingsViewController.h; sourceTree = "<group>"; };
 		D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveSettingsViewController.m; sourceTree = "<group>"; };
-		D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBubsSegmentedControl.h; sourceTree = "<group>"; };
-		D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBubsSegmentedControl.m; sourceTree = "<group>"; };
 		D33EBF62183A3D1900272403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D33EBF63183A3D1900272403 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D33EBF7D183A3D7400272403 /* BKBreveEffectManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectManagerTests.m; sourceTree = "<group>"; };
@@ -102,9 +102,6 @@
 		D3442B3018576A6F00342E15 /* BKBreveURLSchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBreveURLSchemeManager.m; path = "URL Scheme/BKBreveURLSchemeManager.m"; sourceTree = "<group>"; };
 		D36E919E185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveInputAccessoryView.h; sourceTree = "<group>"; };
 		D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveInputAccessoryView.m; sourceTree = "<group>"; };
-		D36E91A1185B7FFF00C2B6A6 /* BKBreveEffectsInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveEffectsInputView.h; sourceTree = "<group>"; };
-		D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBreveEffectsInputView.m; sourceTree = "<group>"; };
-		D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKBreveEffectsInputView.xib; sourceTree = "<group>"; };
 		D37CADA71848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+AccentsAndDiacritics.h"; path = "Classes/Categories/NSString+AccentsAndDiacritics.h"; sourceTree = "<group>"; };
 		D37CADA81848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+AccentsAndDiacritics.m"; path = "Classes/Categories/NSString+AccentsAndDiacritics.m"; sourceTree = "<group>"; };
 		D37CADAB1848E18000AE3E91 /* BKBreveVersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBreveVersionNumber.h; sourceTree = "<group>"; };
@@ -212,6 +209,9 @@
 				D33EBF59183A3D1900272403 /* BKBreveNavigationController.m */,
 				D33EBF5A183A3D1900272403 /* BKBreveSettingsViewController.h */,
 				D33EBF5B183A3D1900272403 /* BKBreveSettingsViewController.m */,
+				D31D0AEA18E4722200707C48 /* BKBreveEffectsViewController.h */,
+				D31D0AEB18E4722200707C48 /* BKBreveEffectsViewController.m */,
+				D31D0AEC18E4722200707C48 /* BKBreveEffectsViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -222,11 +222,6 @@
 				D3266E85185887F900F56152 /* BKBreveInputAccessoryView.xib */,
 				D36E919E185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.h */,
 				D36E919F185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m */,
-				D33EBF5D183A3D1900272403 /* BKBubsSegmentedControl.h */,
-				D33EBF5E183A3D1900272403 /* BKBubsSegmentedControl.m */,
-				D36E91A1185B7FFF00C2B6A6 /* BKBreveEffectsInputView.h */,
-				D36E91A2185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m */,
-				D36E91A4185B819100C2B6A6 /* BKBreveEffectsInputView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BK;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bruno Koga";
 				TargetAttributes = {
 					D3CF9B351834E33200C7C33F = {
@@ -399,10 +394,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36E91A5185B819100C2B6A6 /* BKBreveEffectsInputView.xib in Resources */,
 				D3266E8818588BF500F56152 /* Images.xcassets in Resources */,
 				D3266E86185887F900F56152 /* BKBreveInputAccessoryView.xib in Resources */,
 				D33EBF71183A3D1900272403 /* MainStoryboard_iPhone.storyboard in Resources */,
+				D31D0AEE18E4722200707C48 /* BKBreveEffectsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,14 +454,13 @@
 				D37CADA91848CD7C00AE3E91 /* NSString+AccentsAndDiacritics.m in Sources */,
 				D3D4B966184CD6E000F589EB /* BKBreveDarkTheme.m in Sources */,
 				D3A38BEB18AA88E000CA021A /* BKBrevePowerGirlTheme.m in Sources */,
-				D36E91A3185B7FFF00C2B6A6 /* BKBreveEffectsInputView.m in Sources */,
 				D3442B3118576A6F00342E15 /* BKBreveURLSchemeManager.m in Sources */,
-				D33EBF6D183A3D1900272403 /* BKBubsSegmentedControl.m in Sources */,
 				D36E91A0185B7C4C00C2B6A6 /* BKBreveInputAccessoryView.m in Sources */,
 				D32980C0185E555C00E1B12D /* BKBreveEffectBubs.m in Sources */,
 				D33EBF64183A3D1900272403 /* BKAppDelegate.m in Sources */,
 				D32980BD185E554A00E1B12D /* BKBreveEffectNormal.m in Sources */,
 				D33EBF6B183A3D1900272403 /* BKBreveNavigationController.m in Sources */,
+				D31D0AED18E4722200707C48 /* BKBreveEffectsViewController.m in Sources */,
 				D32980BA185E54F000E1B12D /* BKBreveEffect.m in Sources */,
 				D3D4B95E184CCB4600F589EB /* BKBreveBasicTheme.m in Sources */,
 				D32980B7185E548300E1B12D /* BKBreveEffectManager.m in Sources */,
@@ -508,7 +502,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -559,7 +552,6 @@
 		D37CADB01848EAA100AE3E91 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breve.app/Breve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -579,7 +571,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -619,7 +610,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -686,7 +676,6 @@
 		D3CF9B661834E33200C7C33F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breve.app/Breve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -709,7 +698,6 @@
 		D3CF9B671834E33200C7C33F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breve.app/Breve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

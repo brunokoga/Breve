@@ -21,9 +21,12 @@
     return _lettersArray;
 }
 
-- (NSString *)effectName
-{
+- (NSString *)effectName {
     return @"Normal";
+}
+
+- (NSString *)effectDisplayName {
+  return @"Normal";
 }
 
 @end

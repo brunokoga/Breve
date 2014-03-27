@@ -7,7 +7,6 @@
 //
 
 #import "BKBreveThemeAbstractClass.h"
-#import "BKBreveEffectsInputView.h"
 
 @implementation BKBreveThemeAbstractClass
 
@@ -28,7 +27,6 @@
   [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [self tintColor]}];
   [[UISegmentedControl appearance] setTintColor:[self tintColor]];
   [[UIToolbar appearance] setBarTintColor:[self backgroundColor]];
-  [[BKBreveEffectsInputView appearance] setBackgroundColor:[self backgroundColor]];
 }
 
 @end

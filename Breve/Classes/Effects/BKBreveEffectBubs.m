@@ -105,7 +105,7 @@
 
 - (NSString *)effectDisplayName
 {
-  return @"";
+  return @"ⓑⓤⓑⓢ";
 }
 
 @end

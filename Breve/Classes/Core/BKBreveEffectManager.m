@@ -7,11 +7,15 @@
 //
 
 #import "BKBreveEffectManager.h"
+#import "BKBreveSettings.h"
+#import "NSString+AccentsAndDiacritics.h"
 
 @interface BKBreveEffectManager ()
 //cache. key = effect name; value = BKBreveEffects instance
 @property (strong, nonatomic) NSMutableDictionary *effectsCache;
+
 @end
+
 @implementation BKBreveEffectManager
 
 + (id)sharedManager
@@ -40,6 +44,25 @@
 
   }
   return [mutableString copy];
+}
+
+- (NSString *)convertString:(NSString *)string
+                   toEffect:(BKBreveEffect *)effect
+{
+  if ([effect isMemberOfClass:[BKBreveEffectNormal class]]) {
+    return self.normalText;
+  }
+  self.normalText = string;
+  BKBreveSettings *settings = [BKBreveSettings generalSettings];
+  NSString *textToBeConverted = [string copy];
+  if ([settings removeAccentsAndDiacritics])
+  {
+    textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
+  }
+  BKBreveEffect *cachedToEffect = [self cacheAddOrReturnCachedEffect:effect];
+  return [self convertString:textToBeConverted
+                 fromMapping:nil
+                   toMapping:cachedToEffect.toMapping];
 }
 
 - (NSString *)convertString:(NSString *)string
