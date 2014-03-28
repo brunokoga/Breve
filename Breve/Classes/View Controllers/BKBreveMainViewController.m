@@ -237,12 +237,41 @@
 
   NSRange beforeTextRange = NSMakeRange(0, range.location);
   NSString *textBeforeChanges = [textView.text substringWithRange:beforeTextRange];
-  NSUInteger realLocation = [textBeforeChanges lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+  
+  
+  NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
+  
+  __block NSUInteger realLocation = 0;
+  [textBeforeChanges enumerateSubstringsInRange:beforeTextRange
+                        options:NSStringEnumerationByComposedCharacterSequences
+                     usingBlock:^(NSString *substring, NSRange substringRange,
+                                  NSRange enclosingRange, BOOL *stop)
+  {
+    if ([normalText rangeOfString:substring].location != NSNotFound) {
+      realLocation = realLocation + [substring length];
+    } else {
+      realLocation = realLocation + [substring lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+    }
+  }];
+  
+//  NSUInteger realLocation = [textBeforeChanges lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
 
   //thanks: http://www.objc.io/issue-9/unicode.html
   //each char is counted once, even if it has 2+ unichars
-  NSString *textInRange = [textView.text substringWithRange:range];
-  NSUInteger realLength = [textInRange lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+//  NSString *textInRange = [textView.text substringWithRange:range];
+  __block NSUInteger realLength = 0;
+  [textView.text enumerateSubstringsInRange:range
+                        options:NSStringEnumerationByComposedCharacterSequences
+                     usingBlock:^(NSString *substring, NSRange substringRange,
+                                  NSRange enclosingRange, BOOL *stop)
+  {
+    if ([normalText rangeOfString:substring].location != NSNotFound) {
+      realLength = realLength + [substring length];
+    } else {
+      realLength = realLength + [substring lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+    }
+  }];
+//  NSUInteger realLength = [textInRange lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
   //each char before the range is counted once, even if it has 2+ unichars
 
   NSRange realRange = NSMakeRange(realLocation, realLength);
@@ -252,7 +281,6 @@
   self.cursorRange = NSMakeRange(restOfString.length, 0);
   
 
-  NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
   NSString *newNormalText = [normalText stringByReplacingCharactersInRange:realRange withString:text];
   [[BKBreveEffectManager sharedManager] setNormalText:newNormalText];
   return YES;
