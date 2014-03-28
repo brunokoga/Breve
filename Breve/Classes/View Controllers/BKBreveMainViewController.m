@@ -223,20 +223,41 @@
   NSString *textToBeConverted = self.textView.text;
     textView.text = [[BKBreveEffectManager sharedManager] convertString:textToBeConverted
                                                                toEffect:effect];
-    [textView setSelectedRange:self.cursorRange];
+  
+  
+  NSUInteger newLocation = [textView.text length] - self.cursorRange.location;
+  self.cursorRange = NSMakeRange(newLocation, self.cursorRange.length);
+  [textView setSelectedRange:self.cursorRange];
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
   [textView scrollRangeToVisible:range];
-  NSUInteger location = range.location + [text length];
-  NSUInteger length = 0;
-  self.cursorRange = NSMakeRange(location, length);
   //fixes normal text
-  NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
+  
   //TODO: iterate through ranges to make sure we're swapping the correct text
   //and even further: that we don't crash!
-  [[BKBreveEffectManager sharedManager] setNormalText:[normalText stringByReplacingCharactersInRange:range withString:text]];
+
+  NSRange beforeTextRange = NSMakeRange(0, range.location);
+  NSString *textBeforeChanges = [textView.text substringWithRange:beforeTextRange];
+  NSUInteger realLocation = [textBeforeChanges lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+
+  //thanks: http://www.objc.io/issue-9/unicode.html
+  //each char is counted once, even if it has 2+ unichars
+  NSString *textInRange = [textView.text substringWithRange:range];
+  NSUInteger realLength = [textInRange lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+  //each char before the range is counted once, even if it has 2+ unichars
+
+  NSRange realRange = NSMakeRange(realLocation, realLength);
+  
+  //this is stored here to pass the information to -textViewDidChange:
+  NSString *restOfString = [textView.text substringFromIndex:(range.location + range.length)];
+  self.cursorRange = NSMakeRange(restOfString.length, 0);
+  
+
+  NSString *normalText = [[BKBreveEffectManager sharedManager] normalText];
+  NSString *newNormalText = [normalText stringByReplacingCharactersInRange:realRange withString:text];
+  [[BKBreveEffectManager sharedManager] setNormalText:newNormalText];
   return YES;
 }
 
