@@ -234,9 +234,6 @@
 {
   [textView scrollRangeToVisible:range];
   //fixes normal text
-  
-  //TODO: iterate through ranges to make sure we're swapping the correct text
-  //and even further: that we don't crash!
 
   NSRange beforeTextRange = NSMakeRange(0, range.location);
   NSString *textBeforeChanges = [textView.text substringWithRange:beforeTextRange];

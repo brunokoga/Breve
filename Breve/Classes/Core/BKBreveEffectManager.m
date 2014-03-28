@@ -52,17 +52,21 @@
   if ([effect isMemberOfClass:[BKBreveEffectNormal class]]) {
     return self.normalText;
   }
+
+  NSString *stringToBeConverted = string;
   if ([[[BKBreveEffectManager sharedManager] effect] isMemberOfClass:[BKBreveEffectNormal class]]) {
     self.normalText = string;
+  } else {
+    stringToBeConverted = self.normalText;
   }
   BKBreveSettings *settings = [BKBreveSettings generalSettings];
-  NSString *textToBeConverted = [string copy];
+
   if ([settings removeAccentsAndDiacritics])
   {
-    textToBeConverted = [textToBeConverted stringByRemovingAccentsAndDiacritics];
+    stringToBeConverted = [stringToBeConverted stringByRemovingAccentsAndDiacritics];
   }
   BKBreveEffect *cachedToEffect = [self cacheAddOrReturnCachedEffect:effect];
-  return [self convertString:textToBeConverted
+  return [self convertString:stringToBeConverted
                  fromMapping:nil
                    toMapping:cachedToEffect.toMapping];
 }
